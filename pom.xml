@@ -38,6 +38,15 @@
         <easy.captcha.version>1.6.2</easy.captcha.version>
         <commons.pool2.version>2.11.1</commons.pool2.version>
         <bitwalker.version>1.21</bitwalker.version>
+        <hutool.all.version>5.8.5</hutool.all.version>
+        <commons.io.version>2.11.0</commons.io.version>
+        <flexmark.version>0.62.2</flexmark.version>
+        <just.auth.version>1.16.5</just.auth.version>
+        <jasypt.version>3.0.4</jasypt.version>
+        <jsoup.version>1.15.3</jsoup.version>
+        <httpcore.version>4.4.15</httpcore.version>
+        <commons.fileupload.version>1.4</commons.fileupload.version>
+        <just.auth.version>1.16.5</just.auth.version>
     </properties>
 
     <dependencyManagement>
@@ -121,6 +130,110 @@
                 <version>${mybatis.plus.version}</version>
             </dependency>
 
+            <!-- Ali JSON 解析器 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjason.version}</version>
+            </dependency>
+
+            <!-- MapStruct 对象转换 -->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+
+            <!-- Page Helper 分页插件 -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper.version}</version>
+            </dependency>
+
+            <!-- easy-captcha 验证码 -->
+            <dependency>
+                <groupId>com.github.whvcse</groupId>
+                <artifactId>easy-captcha</artifactId>
+                <version>${easy.captcha.version}</version>
+            </dependency>
+
+            <!-- 使用Redis缓存需要引用 -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-pool2</artifactId>
+                <version>${commons.pool2.version}</version>
+            </dependency>
+
+            <!-- 解析客户端操作系统、浏览器等 -->
+            <dependency>
+                <groupId>eu.bitwalker</groupId>
+                <artifactId>UserAgentUtils</artifactId>
+                <version>${bitwalker.version}</version>
+            </dependency>
+
+            <!-- AOP 切面 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-aop</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+
+            <!-- huTool 工具 -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.all.version}</version>
+            </dependency>
+
+            <!-- IO 常用工具类 -->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons.io.version}</version>
+            </dependency>
+
+            <!-- Markdown 转 Html -->
+            <dependency>
+                <groupId>com.vladsch.flexmark</groupId>
+                <artifactId>flexmark-all</artifactId>
+                <version>${flexmark.version}</version>
+            </dependency>
+
+            <!-- 表格渲染插件 -->
+            <dependency>
+                <groupId>com.vladsch.flexmark</groupId>
+                <artifactId>flexmark-ext-tables</artifactId>
+                <version>${flexmark.version}</version>
+            </dependency>
+
+            <!-- JustAuth 第三方登录模块 -->
+            <dependency>
+                <groupId>me.zhyd.oauth</groupId>
+                <artifactId>JustAuth</artifactId>
+                <version>${just.auth.version}</version>
+            </dependency>
+
+            <!-- 数据库密码加密 -->
+            <dependency>
+                <groupId>com.github.ulisesbocchio</groupId>
+                <artifactId>jasypt-spring-boot-starter</artifactId>
+                <version>${jasypt.version}</version>
+            </dependency>
+
+            <!-- HTTP core -->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpcore</artifactId>
+                <version>${httpcore.version}</version>
+            </dependency>
+
+            <!-- 文件上传工具类 -->
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>${commons.fileupload.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
