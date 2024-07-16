@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>liuuu-navigation</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <description>Navigation</description>
+    <modules>
+        <module>liuuu-navigation-admin</module>
+        <module>liuuu-navigation-common</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <liuuu.navigation.common.core.version>1.0.0</liuuu.navigation.common.core.version>
+        <liuuu.navigation.common.rate.limiter.version>1.0.0</liuuu.navigation.common.rate.limiter.version>
+        <liuuu.navigation.common.redis.version>1.0.0</liuuu.navigation.common.redis.version>
+        <liuuu.navigation.common.swagger.version>1.0.0</liuuu.navigation.common.swagger.version>
+        <liuuu.navigation.common.log.version>1.0.0</liuuu.navigation.common.log.version>
+        <liuuu.navigation.common.security.version>1.0.0</liuuu.navigation.common.security.version>
+        <liuuu.navigation.common.framework.version>1.0.0</liuuu.navigation.common.framework.version>
+        <liuuu.navigation.admin.system.version>1.0.0</liuuu.navigation.admin.system.version>
+
+        <spring.boot.version>2.3.12.RELEASE</spring.boot.version>
+        <knife4j.version>3.0.3</knife4j.version>
+        <mybatis.plus.version>3.5.2</mybatis.plus.version>
+        <fastjason.version>1.2.79</fastjason.version>
+        <mapstruct.version>1.5.0.RC1</mapstruct.version>
+        <lombok.version>1.18.22</lombok.version>
+        <pagehelper.version>1.18.22</pagehelper.version>
+        <easy.captcha.version>1.6.2</easy.captcha.version>
+        <commons.pool2.version>2.11.1</commons.pool2.version>
+        <bitwalker.version>1.21</bitwalker.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- 通用核心模块 -->
+            <dependency>
+                <groupId>com.liuuu</groupId>
+                <artifactId>liuuu-navigation-common-core</artifactId>
+                <version>${liuuu.navigation.common.core.version}</version>
+            </dependency>
+
+            <!-- 通用限流模块  -->
+            <dependency>
+                <groupId>com.liuuu</groupId>
+                <artifactId>liuuu-navigation-common-rate-limiter</artifactId>
+                <version>${liuuu.navigation.common.rate.limiter.version}</version>
+            </dependency>
+
+            <!-- 通用缓存模块 -->
+            <dependency>
+                <groupId>com.liuuu</groupId>
+                <artifactId>liuuu-navigation-common-redis</artifactId>
+                <version>${liuuu.navigation.common.redis.version}</version>
+            </dependency>
+
+            <!-- 日志模块 -->
+            <dependency>
+                <groupId>com.liuuu</groupId>
+                <artifactId>liuuu-navigation-common-log</artifactId>
+                <version>${liuuu.navigation.common.log.version}</version>
+            </dependency>
+
+            <!-- 安全认证模块 -->
+            <dependency>
+                <groupId>com.liuuu</groupId>
+                <artifactId>liuuu-navigation-common-security</artifactId>
+                <version>${liuuu.navigation.common.security.version}</version>
+            </dependency>
+
+            <!-- 通用接口文档模块 -->
+            <dependency>
+                <groupId>com.liuuu</groupId>
+                <artifactId>liuuu-navigation-common-swagger</artifactId>
+                <version>${liuuu.navigation.common.swagger.version}</version>
+            </dependency>
+
+            <!-- 通用框架模块 -->
+            <dependency>
+                <groupId>com.liuuu</groupId>
+                <artifactId>liuuu-navigation-common-framework</artifactId>
+                <version>${liuuu.navigation.common.framework.version}</version>
+            </dependency>
+
+            <!-- 系统模块 -->
+            <dependency>
+                <groupId>com.liuuu</groupId>
+                <artifactId>liuuu-navigation-admin-system</artifactId>
+                <version>${liuuu.navigation.admin.system.version}</version>
+            </dependency>
+
+            <!-- Spring Boot -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- knife4j接口文档 -->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+
+            <!-- MyBatis Plus -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis.plus.version}</version>
+            </dependency>
+
+
+        </dependencies>
+    </dependencyManagement>
+</project>
