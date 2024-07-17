@@ -2,8 +2,13 @@ package com.liuuu.common.core.util.string;
 
 import com.liuuu.common.core.constant.CommonConstant;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.util.AntPathMatcher;
 import org.springframework.util.CollectionUtils;
+
+import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
+import java.util.Random;
 
 /**
  * 字符串工具类
@@ -142,5 +147,82 @@ public class StrUtils extends StringUtils {
             return value;
         }
         return value.substring(0, 1).toUpperCase() + value.substring(1);
+    }
+
+    /**
+     * 数组是否包含指定值
+     *
+     * @param array  数组
+     * @param value  指定值
+     * @return
+     */
+    public static boolean isArrayContains(String[] array, String value) {
+        return Arrays.asList(array).contains(value);
+    }
+
+    /**
+     * 指定值是否已包含某后缀
+     * @param value  指定值
+     * @param array  数组
+     * @return
+     */
+    public static boolean endsWithIgnoreCase(String value, String[] array) {
+        for (String s : array) {
+            boolean isEnd = endsWith(value, s);
+            if (isEnd) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * 获取随机字符串
+     * @param s  随机规则
+     * @param length  生成长度
+     * @return
+     */
+    public static String getRandom(String s, int length) {
+        Random random = new Random();
+        StringBuffer buffer = new StringBuffer();
+        int charLength = s.length();
+        for (int i = 0; i < length; i++) {
+            int idx = random.nextInt(charLength);
+            buffer.append(s.charAt(idx));
+        }
+        return buffer.toString();
+    }
+
+    /**
+     * 查找指定字符串是否匹配指定字符串列表中的任意一个字符串
+     * @param str  指定字符串
+     * @param list  需要检查的字符串数组
+     * @return
+     */
+    public static boolean matches(String str, List<String> list) {
+        if (CollectionUtils.isEmpty(list)) {
+            return false;
+        }
+        for (String pattern : list) {
+            if (isMatch(pattern, str)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * 判断URL是否与规则匹配
+     * ? 表示单个字符
+     * * 表示一层路径内的任意字符串，不可跨层级
+     * **表示任意层路径
+     *
+     * @param pattern  匹配规则
+     * @param url  需要匹配的URL
+     * @return
+     */
+    public static boolean isMatch(String pattern, String url) {
+        AntPathMatcher matcher = new AntPathMatcher();
+        return matcher.match(pattern, url);
     }
 }
