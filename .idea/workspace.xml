@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="HttpUtils">
-      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/string/StrUtils.java" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="stringUtils">
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/ip/AddressUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/ip/IPUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/servlet/ServletUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/spring/SpringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/thread/Threads.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/http/HttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/http/HttpUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +84,7 @@
       <workItem from="1721123399762" duration="1271000" />
       <workItem from="1721130111734" duration="4995000" />
       <workItem from="1721185663816" duration="1244000" />
-      <workItem from="1721186918509" duration="9420000" />
+      <workItem from="1721186918509" duration="18432000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -113,16 +118,44 @@
       <option name="project" value="LOCAL" />
       <updated>1721198241463</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="stringUtils">
+      <option name="closed" value="true" />
+      <created>1721199941406</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721199941406</updated>
+    </task>
+    <task id="LOCAL-00006" summary="stringUtils">
+      <option name="closed" value="true" />
+      <created>1721200992234</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721200992234</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start-up" />
     <MESSAGE value="Enums and constants" />
     <MESSAGE value="HttpUtils" />
-    <option name="LAST_COMMIT_MESSAGE" value="HttpUtils" />
+    <MESSAGE value="stringUtils" />
+    <option name="LAST_COMMIT_MESSAGE" value="stringUtils" />
   </component>
 </project>

@@ -71,7 +71,7 @@ public class HttpUtils {
                     in.close();
                 }
             } catch (Exception e) {
-                log.error("调用in.close Exception, url=" + url + ",param=" + param, ex);
+                log.error("调用in.close Exception, url=" + url + ",param=" + param, e);
             }
         }
         return result.toString();
