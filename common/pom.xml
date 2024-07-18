@@ -7,6 +7,17 @@
         <groupId>com.liuuu</groupId>
         <version>1.0.0</version>
     </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>common</artifactId>
+    <name>liuuu-navigation-common</name>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>core</module>
+    </modules>
+
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -38,21 +49,5 @@
             <artifactId>fastjson</artifactId>
         </dependency>
     </dependencies>
-    <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>common</artifactId>
-    <name>liuuu-navigation-common</name>
-    <version>1.0.0</version>
-    <packaging>pom</packaging>
-    <modules>
-        <module>core</module>
-        <module>framework</module>
-        <module>limiter</module>
-        <module>log</module>
-        <module>redis</module>
-        <module>security</module>
-        <module>swagger</module>
-    </modules>
-
 
 </project>

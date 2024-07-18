@@ -4,15 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="stringUtils">
-      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/ip/AddressUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/ip/IPUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/servlet/ServletUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/spring/SpringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/thread/Threads.java" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="NetUtils(ip)">
+      <change afterPath="$PROJECT_DIR$/common/core/src/test/java/com/liuuu/common/core/util/id/IdUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/test/java/com/liuuu/common/core/util/id/IdWorkerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/test/java/com/liuuu/common/core/util/ip/IPUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/test/java/com/liuuu/common/core/util/string/StrUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/test/java/com/liuuu/common/core/util/thread/ThreadsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/http/HttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/http/HttpUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/LiuuuNavigationAdminApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/LiuuuNavigationAdminApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/dto/SysApiAddDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/dto/SysApiAddDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/id/IdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/id/IdWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/ip/AddressUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/ip/AddressUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/ip/IPUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/ip/IPUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/string/StrUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/string/StrUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +41,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -42,26 +53,137 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/EnterpriseProject/Java/navigation/liuuu-navigation/liuuu-navigation&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.IPUtilsTest.executor": "Run",
+    "JUnit.IdUtilsTest.testSimpleUUID.executor": "Run",
+    "JUnit.IdWorkerTest.executor": "Run",
+    "JUnit.IdWorkerTest.testClockBackwards.executor": "Run",
+    "JUnit.IdWorkerTest.testConcurrentNextId.executor": "Run",
+    "JUnit.IdWorkerTest.testMaxValues.executor": "Run",
+    "JUnit.IdWorkerTest.testPerformance.executor": "Run",
+    "JUnit.StrUtilsTest.executor": "Run",
+    "JUnit.StrUtilsTest.testFormat (1).executor": "Run",
+    "JUnit.StrUtilsTest.testFormat.executor": "Run",
+    "JUnit.StrUtilsTest.testIsHttp.executor": "Run",
+    "JUnit.StrUtilsTest.testIsNotNullBlank.executor": "Run",
+    "JUnit.StrUtilsTest.testMatches.executor": "Run",
+    "JUnit.ThreadsTest.testShutdownAndAwaitTermination.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.core [install].executor": "Run",
+    "Maven.liuuu-navigation [clean,install...].executor": "Run",
+    "Maven.liuuu-navigation [install].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/EnterpriseProject/Java/navigation/liuuu-navigation/liuuu-navigation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\EnterpriseProject\Java\navigation\liuuu-navigation\liuuu-navigation\common\swagger" />
       <recent name="D:\EnterpriseProject\Java\navigation\liuuu-navigation\liuuu-navigation\common\log" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.IdWorkerTest">
+    <configuration name="IdWorkerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liuuu.common.core.util.id.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liuuu.common.core.util.id" />
+      <option name="MAIN_CLASS_NAME" value="com.liuuu.common.core.util.id.IdWorkerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IdWorkerTest.testClockBackwards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liuuu.common.core.util.id.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liuuu.common.core.util.id" />
+      <option name="MAIN_CLASS_NAME" value="com.liuuu.common.core.util.id.IdWorkerTest" />
+      <option name="METHOD_NAME" value="testClockBackwards" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IdWorkerTest.testConcurrentNextId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liuuu.common.core.util.id.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liuuu.common.core.util.id" />
+      <option name="MAIN_CLASS_NAME" value="com.liuuu.common.core.util.id.IdWorkerTest" />
+      <option name="METHOD_NAME" value="testConcurrentNextId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IdWorkerTest.testMaxValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liuuu.common.core.util.id.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liuuu.common.core.util.id" />
+      <option name="MAIN_CLASS_NAME" value="com.liuuu.common.core.util.id.IdWorkerTest" />
+      <option name="METHOD_NAME" value="testMaxValues" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IdWorkerTest.testPerformance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liuuu.common.core.util.id.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liuuu.common.core.util.id" />
+      <option name="MAIN_CLASS_NAME" value="com.liuuu.common.core.util.id.IdWorkerTest" />
+      <option name="METHOD_NAME" value="testPerformance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.IdWorkerTest" />
+        <item itemvalue="JUnit.IdWorkerTest.testPerformance" />
+        <item itemvalue="JUnit.IdWorkerTest.testMaxValues" />
+        <item itemvalue="JUnit.IdWorkerTest.testClockBackwards" />
+        <item itemvalue="JUnit.IdWorkerTest.testConcurrentNextId" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -84,7 +206,11 @@
       <workItem from="1721123399762" duration="1271000" />
       <workItem from="1721130111734" duration="4995000" />
       <workItem from="1721185663816" duration="1244000" />
-      <workItem from="1721186918509" duration="18432000" />
+      <workItem from="1721186918509" duration="18450000" />
+      <workItem from="1721287359572" duration="3052000" />
+      <workItem from="1721290440623" duration="1562000" />
+      <workItem from="1721292010478" duration="1241000" />
+      <workItem from="1721293567747" duration="5315000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -134,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721200992234</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="NetUtils(ip)">
+      <option name="closed" value="true" />
+      <created>1721216887546</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721216887546</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +290,11 @@
     <MESSAGE value="Enums and constants" />
     <MESSAGE value="HttpUtils" />
     <MESSAGE value="stringUtils" />
-    <option name="LAST_COMMIT_MESSAGE" value="stringUtils" />
+    <MESSAGE value="NetUtils(ip)" />
+    <option name="LAST_COMMIT_MESSAGE" value="NetUtils(ip)" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

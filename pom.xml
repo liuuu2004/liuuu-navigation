@@ -7,10 +7,16 @@
     <groupId>com.liuuu</groupId>
     <artifactId>liuuu-navigation</artifactId>
     <packaging>pom</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+    </dependencies>
     <version>1.0.0</version>
     <description>Navigation</description>
+
     <modules>
-        <module>admin</module>
         <module>common</module>
     </modules>
 
@@ -55,57 +61,57 @@
             <dependency>
                 <groupId>com.liuuu</groupId>
                 <artifactId>core</artifactId>
-                <version>${core.version}</version>
+                <version>${liuuu.navigation.common.core.version}</version>
             </dependency>
 
-            <!-- 通用限流模块  -->
-            <dependency>
-                <groupId>com.liuuu</groupId>
-                <artifactId>rate-limiter</artifactId>
-                <version>${rate.limiter.version}</version>
-            </dependency>
+<!--            &lt;!&ndash; 通用限流模块  &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.liuuu</groupId>-->
+<!--                <artifactId>rate-limiter</artifactId>-->
+<!--                <version>${rate.limiter.version}</version>-->
+<!--            </dependency>-->
 
-            <!-- 通用缓存模块 -->
-            <dependency>
-                <groupId>com.liuuu</groupId>
-                <artifactId>liuuu-navigation-common-redis</artifactId>
-                <version>${liuuu.navigation.common.redis.version}</version>
-            </dependency>
+<!--            &lt;!&ndash; 通用缓存模块 &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.liuuu</groupId>-->
+<!--                <artifactId>liuuu-navigation-common-redis</artifactId>-->
+<!--                <version>${liuuu.navigation.common.redis.version}</version>-->
+<!--            </dependency>-->
 
             <!-- 日志模块 -->
-            <dependency>
-                <groupId>com.liuuu</groupId>
-                <artifactId>liuuu-navigation-common-log</artifactId>
-                <version>${liuuu.navigation.common.log.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.liuuu</groupId>-->
+<!--                <artifactId>liuuu-navigation-common-log</artifactId>-->
+<!--                <version>${liuuu.navigation.common.log.version}</version>-->
+<!--            </dependency>-->
 
             <!-- 安全认证模块 -->
-            <dependency>
-                <groupId>com.liuuu</groupId>
-                <artifactId>liuuu-navigation-common-security</artifactId>
-                <version>${liuuu.navigation.common.security.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.liuuu</groupId>-->
+<!--                <artifactId>liuuu-navigation-common-security</artifactId>-->
+<!--                <version>${liuuu.navigation.common.security.version}</version>-->
+<!--            </dependency>-->
 
             <!-- 通用接口文档模块 -->
-            <dependency>
-                <groupId>com.liuuu</groupId>
-                <artifactId>swagger</artifactId>
-                <version>${swagger.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.liuuu</groupId>-->
+<!--                <artifactId>swagger</artifactId>-->
+<!--                <version>${swagger.version}</version>-->
+<!--            </dependency>-->
 
             <!-- 通用框架模块 -->
-            <dependency>
-                <groupId>com.liuuu</groupId>
-                <artifactId>liuuu-navigation-common-framework</artifactId>
-                <version>${liuuu.navigation.common.framework.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.liuuu</groupId>-->
+<!--                <artifactId>liuuu-navigation-common-framework</artifactId>-->
+<!--                <version>${liuuu.navigation.common.framework.version}</version>-->
+<!--            </dependency>-->
 
-            <!-- 系统模块 -->
-            <dependency>
-                <groupId>com.liuuu</groupId>
-                <artifactId>liuuu-navigation-admin-system</artifactId>
-                <version>${liuuu.navigation.admin.system.version}</version>
-            </dependency>
+<!--            &lt;!&ndash; 系统模块 &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.liuuu</groupId>-->
+<!--                <artifactId>liuuu-navigation-admin-system</artifactId>-->
+<!--                <version>${liuuu.navigation.admin.system.version}</version>-->
+<!--            </dependency>-->
 
             <!-- Spring Boot -->
             <dependency>
@@ -193,19 +199,19 @@
                 <version>${commons.io.version}</version>
             </dependency>
 
-            <!-- Markdown 转 Html -->
-            <dependency>
-                <groupId>com.vladsch.flexmark</groupId>
-                <artifactId>flexmark-all</artifactId>
-                <version>${flexmark.version}</version>
-            </dependency>
+<!--            &lt;!&ndash; Markdown 转 Html &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.vladsch.flexmark</groupId>-->
+<!--                <artifactId>flexmark-all</artifactId>-->
+<!--                <version>${flexmark.version}</version>-->
+<!--            </dependency>-->
 
-            <!-- 表格渲染插件 -->
-            <dependency>
-                <groupId>com.vladsch.flexmark</groupId>
-                <artifactId>flexmark-ext-tables</artifactId>
-                <version>${flexmark.version}</version>
-            </dependency>
+<!--            &lt;!&ndash; 表格渲染插件 &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.vladsch.flexmark</groupId>-->
+<!--                <artifactId>flexmark-ext-tables</artifactId>-->
+<!--                <version>${flexmark.version}</version>-->
+<!--            </dependency>-->
 
             <!-- JustAuth 第三方登录模块 -->
             <dependency>
@@ -252,7 +258,7 @@
                     <annotationProcessorPaths>
                         <path>
                             <groupId>org.projectlombok</groupId>
-                            <artiafctId>lombok</artiafctId>
+                            <artifactId>lombok</artifactId>
                             <version>${lombok.version}</version>
                         </path>
                         <path>

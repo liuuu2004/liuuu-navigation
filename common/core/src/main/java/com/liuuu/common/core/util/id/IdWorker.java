@@ -22,10 +22,18 @@ public class IdWorker {
      */
     private static final long maxWorkerId = -1L ^ (-1L << workerIdBits);
 
+    public static final long getMaxWorkerId() {
+        return maxWorkerId;
+    }
+
     /**
      * 支持的最大数据标识id
      */
     private static final long maxDataCenterId = -1L ^ (-1L << dataCenterIdBits);
+
+    public  static final long getMaxDataCenterId() {
+        return maxDataCenterId;
+    }
 
     /**
      * 序列在id中占用的位数
@@ -66,6 +74,10 @@ public class IdWorker {
      * 毫秒内序列
      */
     private static long sequence;
+
+    public static long getSequence() {
+        return sequence;
+    }
 
     /**
      * 上次生成id的时间戳

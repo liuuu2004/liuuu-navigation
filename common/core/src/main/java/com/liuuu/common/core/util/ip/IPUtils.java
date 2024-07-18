@@ -1,8 +1,6 @@
 package com.liuuu.common.core.util.ip;
 
 import com.liuuu.common.core.util.string.StrUtils;
-import sun.jvm.hotspot.oops.UnknownOopException;
-
 import javax.servlet.http.HttpServletRequest;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -123,9 +121,36 @@ public class IPUtils {
                     bytes[3] = (byte) (l & 0xff);
                     break;
                 case 3:
-
+                    for (i = 0; i < 2; i++) {
+                        l = Integer.parseInt(elements[i]);
+                        if ((l < 0L) || (l > 255L)) {
+                            return null;
+                        }
+                        bytes[i] = (byte) (l & 0xff);
+                    }
+                    l = Integer.parseInt(elements[2]);
+                    if ((l < 0L) || (l > 65535L)) {
+                        return null;
+                    }
+                    bytes[2] = (byte) (l >> 8 & 0xff);
+                    bytes[3] = (byte) (l & 0xff);
+                    break;
+                case 4:
+                    for (i = 0; i < 4; i++) {
+                        l = Integer.parseInt(elements[i]);
+                        if ((l < 0L) || (l > 255L)) {
+                            return null;
+                        }
+                        bytes[i] = (byte) (l & 0xff);
+                    }
+                    break;
+                default:
+                    return null;
             }
+        } catch (NumberFormatException e) {
+            return null;
         }
+        return bytes;
     }
 
     /**
