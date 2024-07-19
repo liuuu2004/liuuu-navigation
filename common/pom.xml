@@ -32,6 +32,8 @@
         <module>core</module>
         <module>log</module>
         <module>swagger</module>
+        <module>security</module>
+        <module>redis</module>
     </modules>
 
     <dependencies>
