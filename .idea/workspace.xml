@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="some web utils, vo and response result">
-      <change afterPath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/annotation/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/aspect/LogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/service/LogMqService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/service/impl/LogMqServiceImpl.java" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="redis config">
+      <change afterPath="$PROJECT_DIR$/common/redis/src/main/java/com/liuuu/navigation/common/redis/service/RedisService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/log/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/log/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/factory/LogAsyncFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/factory/LogAsyncFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/redis/src/main/java/com/liuuu/navigation/common/redis/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/redis/src/main/java/com/liuuu/navigation/common/redis/config/RedisConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +209,7 @@
       <workItem from="1721357805556" duration="1771000" />
       <workItem from="1721365241213" duration="1441000" />
       <workItem from="1721366691876" duration="3352000" />
-      <workItem from="1721377689146" duration="554000" />
+      <workItem from="1721377689146" duration="3383000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -291,7 +283,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721357636214</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="swagger finished">
+      <option name="closed" value="true" />
+      <created>1721378248967</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1721378248967</updated>
+    </task>
+    <task id="LOCAL-00011" summary="redis config">
+      <option name="closed" value="true" />
+      <created>1721384912530</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1721384912530</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +324,9 @@
     <MESSAGE value="NetUtils(ip)" />
     <MESSAGE value="some test-cases" />
     <MESSAGE value="some web utils, vo and response result" />
-    <option name="LAST_COMMIT_MESSAGE" value="some web utils, vo and response result" />
+    <MESSAGE value="swagger finished" />
+    <MESSAGE value="redis config" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis config" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

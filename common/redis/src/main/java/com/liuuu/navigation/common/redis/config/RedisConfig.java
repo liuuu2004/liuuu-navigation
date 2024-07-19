@@ -28,7 +28,7 @@ public class RedisConfig extends CachingConfigurerSupport {
     /**
      * 序列化配置
      */
-    @Bean
+//    @Bean
     @SuppressWarnings(value = { "unchecked", "rawtypes" })
     public RedisTemplate<Object, Object> redisTemplate(RedisConnectionFactory connectionFactory) {
         RedisTemplate<Object, Object> template = new RedisTemplate<>();

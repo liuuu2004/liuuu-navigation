@@ -13,6 +13,8 @@
         <option value="$PROJECT_DIR$/common/core/pom.xml" />
         <option value="$PROJECT_DIR$/common/log/pom.xml" />
         <option value="$PROJECT_DIR$/common/swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/common/security/pom.xml" />
+        <option value="$PROJECT_DIR$/common/redis/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
