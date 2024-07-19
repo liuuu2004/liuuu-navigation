@@ -19,13 +19,13 @@
         <!-- Swagger 接口文档 -->
         <dependency>
             <groupId>com.liuuu</groupId>
-            <artifactId>liuuu-navigation-common-swagger</artifactId>
+            <artifactId>swagger</artifactId>
         </dependency>
 
         <!-- 日志模块 -->
         <dependency>
             <groupId>com.liuuu</groupId>
-            <artifactId>liuuu-navigation-common-log</artifactId>
+            <artifactId>log</artifactId>
         </dependency>
 
     </dependencies>

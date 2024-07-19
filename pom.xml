@@ -7,17 +7,12 @@
     <groupId>com.liuuu</groupId>
     <artifactId>liuuu-navigation</artifactId>
     <packaging>pom</packaging>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-        </dependency>
-    </dependencies>
     <version>1.0.0</version>
     <description>Navigation</description>
 
     <modules>
         <module>common</module>
+        <module>admin</module>
     </modules>
 
     <properties>
@@ -52,8 +47,14 @@
         <jsoup.version>1.15.3</jsoup.version>
         <httpcore.version>4.4.15</httpcore.version>
         <commons.fileupload.version>1.4</commons.fileupload.version>
-        <just.auth.version>1.16.5</just.auth.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -64,14 +65,14 @@
                 <version>${liuuu.navigation.common.core.version}</version>
             </dependency>
 
-<!--            &lt;!&ndash; 通用限流模块  &ndash;&gt;-->
+            <!-- 通用限流模块 -->
 <!--            <dependency>-->
 <!--                <groupId>com.liuuu</groupId>-->
 <!--                <artifactId>rate-limiter</artifactId>-->
-<!--                <version>${rate.limiter.version}</version>-->
+<!--                <version>${liuuu.navigation.common.rate.limiter.version}</version>-->
 <!--            </dependency>-->
 
-<!--            &lt;!&ndash; 通用缓存模块 &ndash;&gt;-->
+            <!-- 通用缓存模块 -->
 <!--            <dependency>-->
 <!--                <groupId>com.liuuu</groupId>-->
 <!--                <artifactId>liuuu-navigation-common-redis</artifactId>-->
@@ -79,11 +80,11 @@
 <!--            </dependency>-->
 
             <!-- 日志模块 -->
-<!--            <dependency>-->
-<!--                <groupId>com.liuuu</groupId>-->
-<!--                <artifactId>liuuu-navigation-common-log</artifactId>-->
-<!--                <version>${liuuu.navigation.common.log.version}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>com.liuuu</groupId>
+                <artifactId>log</artifactId>
+                <version>${liuuu.navigation.common.log.version}</version>
+            </dependency>
 
             <!-- 安全认证模块 -->
 <!--            <dependency>-->
@@ -96,7 +97,7 @@
 <!--            <dependency>-->
 <!--                <groupId>com.liuuu</groupId>-->
 <!--                <artifactId>swagger</artifactId>-->
-<!--                <version>${swagger.version}</version>-->
+<!--                <version>${liuuu.navigation.common.swagger.version}</version>-->
 <!--            </dependency>-->
 
             <!-- 通用框架模块 -->
@@ -106,7 +107,7 @@
 <!--                <version>${liuuu.navigation.common.framework.version}</version>-->
 <!--            </dependency>-->
 
-<!--            &lt;!&ndash; 系统模块 &ndash;&gt;-->
+            <!-- 系统模块 -->
 <!--            <dependency>-->
 <!--                <groupId>com.liuuu</groupId>-->
 <!--                <artifactId>liuuu-navigation-admin-system</artifactId>-->
@@ -199,14 +200,14 @@
                 <version>${commons.io.version}</version>
             </dependency>
 
-<!--            &lt;!&ndash; Markdown 转 Html &ndash;&gt;-->
+            <!-- Markdown 转 Html -->
 <!--            <dependency>-->
 <!--                <groupId>com.vladsch.flexmark</groupId>-->
 <!--                <artifactId>flexmark-all</artifactId>-->
 <!--                <version>${flexmark.version}</version>-->
 <!--            </dependency>-->
 
-<!--            &lt;!&ndash; 表格渲染插件 &ndash;&gt;-->
+            <!-- 表格渲染插件 -->
 <!--            <dependency>-->
 <!--                <groupId>com.vladsch.flexmark</groupId>-->
 <!--                <artifactId>flexmark-ext-tables</artifactId>-->
@@ -220,81 +221,55 @@
                 <version>${just.auth.version}</version>
             </dependency>
 
-            <!-- 数据库密码加密 -->
+            <!-- Jasypt 配置文件加密 -->
             <dependency>
                 <groupId>com.github.ulisesbocchio</groupId>
                 <artifactId>jasypt-spring-boot-starter</artifactId>
                 <version>${jasypt.version}</version>
             </dependency>
 
-            <!-- HTTP core -->
+            <!-- Jsoup HTML 解析器 -->
+            <dependency>
+                <groupId>org.jsoup</groupId>
+                <artifactId>jsoup</artifactId>
+                <version>${jsoup.version}</version>
+            </dependency>
+
+            <!-- HttpCore -->
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpcore</artifactId>
                 <version>${httpcore.version}</version>
             </dependency>
 
-            <!-- 文件上传工具类 -->
+            <!-- commons-fileupload 文件上传依赖 -->
             <dependency>
                 <groupId>commons-fileupload</groupId>
                 <artifactId>commons-fileupload</artifactId>
                 <version>${commons.fileupload.version}</version>
             </dependency>
 
+            <!-- commons-lang3 -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.12.0</version>
+            </dependency>
+
+            <!-- lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>2.3.12.RELEASE</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven.compiler.plugin.version}</version>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                    <encoding>${project.build.sourceEncoding}</encoding>
-                    <!-- 解决 Lombok + MapStruct 组合 -->
-                    <annotationProcessorPaths>
-                        <path>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                            <version>${lombok.version}</version>
-                        </path>
-                        <path>
-                            <groupId>org.mapstruct</groupId>
-                            <artifactId>mapstruct-processor</artifactId>
-                            <version>${mapstruct.version}</version>
-                        </path>
-                    </annotationProcessorPaths>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
-    <repositories>
-        <repository>
-            <id>public</id>
-            <name>aliyun nexus</name>
-            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>public</id>
-            <name>aliyun nexus</name>
-            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
-
 </project>

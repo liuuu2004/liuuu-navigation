@@ -4,14 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="some test-cases">
-      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/html/EscapeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/html/HTMLFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/message/MessageUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/web/vo/BaseVO.java" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="some web utils, vo and response result">
+      <change afterPath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/annotation/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/aspect/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/service/LogMqService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/service/impl/LogMqServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/web/response/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/web/response/ResponseResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/log/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/log/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/factory/LogAsyncFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/factory/LogAsyncFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -34,6 +42,9 @@
   </component>
   <component name="MavenRunner">
     <option name="delegateBuildToMaven" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -202,7 +213,11 @@
       <workItem from="1721290440623" duration="1562000" />
       <workItem from="1721292010478" duration="1241000" />
       <workItem from="1721293567747" duration="9034000" />
-      <workItem from="1721356759277" duration="856000" />
+      <workItem from="1721356759277" duration="1036000" />
+      <workItem from="1721357805556" duration="1771000" />
+      <workItem from="1721365241213" duration="1441000" />
+      <workItem from="1721366691876" duration="3352000" />
+      <workItem from="1721377689146" duration="554000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -268,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721299146694</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="some web utils, vo and response result">
+      <option name="closed" value="true" />
+      <created>1721357636214</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721357636214</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +315,8 @@
     <MESSAGE value="stringUtils" />
     <MESSAGE value="NetUtils(ip)" />
     <MESSAGE value="some test-cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="some test-cases" />
+    <MESSAGE value="some web utils, vo and response result" />
+    <option name="LAST_COMMIT_MESSAGE" value="some web utils, vo and response result" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

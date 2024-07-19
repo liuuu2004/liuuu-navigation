@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/common/swagger/src/pom.xml" />
         <option value="$PROJECT_DIR$/common/log/src/pom.xml" />
         <option value="$PROJECT_DIR$/common/core/pom.xml" />
+        <option value="$PROJECT_DIR$/common/log/pom.xml" />
+        <option value="$PROJECT_DIR$/common/swagger/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
