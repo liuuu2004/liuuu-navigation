@@ -4,23 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="NetUtils(ip)">
-      <change afterPath="$PROJECT_DIR$/common/core/src/test/java/com/liuuu/common/core/util/id/IdUtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/core/src/test/java/com/liuuu/common/core/util/id/IdWorkerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/core/src/test/java/com/liuuu/common/core/util/ip/IPUtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/core/src/test/java/com/liuuu/common/core/util/string/StrUtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/core/src/test/java/com/liuuu/common/core/util/thread/ThreadsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="some test-cases">
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/html/EscapeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/html/HTMLFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/message/MessageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/web/vo/BaseVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/LiuuuNavigationAdminApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/LiuuuNavigationAdminApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/dto/SysApiAddDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/dto/SysApiAddDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/id/IdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/id/IdWorker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/ip/AddressUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/ip/AddressUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/ip/IPUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/ip/IPUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/string/StrUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/string/StrUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/web/response/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/web/response/ResponseResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,42 +44,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.IPUtilsTest.executor": "Run",
-    "JUnit.IdUtilsTest.testSimpleUUID.executor": "Run",
-    "JUnit.IdWorkerTest.executor": "Run",
-    "JUnit.IdWorkerTest.testClockBackwards.executor": "Run",
-    "JUnit.IdWorkerTest.testConcurrentNextId.executor": "Run",
-    "JUnit.IdWorkerTest.testMaxValues.executor": "Run",
-    "JUnit.IdWorkerTest.testPerformance.executor": "Run",
-    "JUnit.StrUtilsTest.executor": "Run",
-    "JUnit.StrUtilsTest.testFormat (1).executor": "Run",
-    "JUnit.StrUtilsTest.testFormat.executor": "Run",
-    "JUnit.StrUtilsTest.testIsHttp.executor": "Run",
-    "JUnit.StrUtilsTest.testIsNotNullBlank.executor": "Run",
-    "JUnit.StrUtilsTest.testMatches.executor": "Run",
-    "JUnit.ThreadsTest.testShutdownAndAwaitTermination.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.core [install].executor": "Run",
-    "Maven.liuuu-navigation [clean,install...].executor": "Run",
-    "Maven.liuuu-navigation [install].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/EnterpriseProject/Java/navigation/liuuu-navigation/liuuu-navigation",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.IPUtilsTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IdUtilsTest.testSimpleUUID.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IdWorkerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IdWorkerTest.testClockBackwards.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IdWorkerTest.testConcurrentNextId.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IdWorkerTest.testMaxValues.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IdWorkerTest.testPerformance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StrUtilsTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StrUtilsTest.testFormat (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StrUtilsTest.testFormat.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StrUtilsTest.testIsHttp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StrUtilsTest.testIsNotNullBlank.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StrUtilsTest.testMatches.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ThreadsTest.testShutdownAndAwaitTermination.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.core [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.liuuu-navigation [clean,install...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.liuuu-navigation [install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/EnterpriseProject/Java/navigation/liuuu-navigation/liuuu-navigation&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\EnterpriseProject\Java\navigation\liuuu-navigation\liuuu-navigation\common\swagger" />
@@ -210,7 +201,8 @@
       <workItem from="1721287359572" duration="3052000" />
       <workItem from="1721290440623" duration="1562000" />
       <workItem from="1721292010478" duration="1241000" />
-      <workItem from="1721293567747" duration="5315000" />
+      <workItem from="1721293567747" duration="9034000" />
+      <workItem from="1721356759277" duration="856000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -268,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721216887546</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="some test-cases">
+      <option name="closed" value="true" />
+      <created>1721299146694</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1721299146694</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,7 +291,8 @@
     <MESSAGE value="HttpUtils" />
     <MESSAGE value="stringUtils" />
     <MESSAGE value="NetUtils(ip)" />
-    <option name="LAST_COMMIT_MESSAGE" value="NetUtils(ip)" />
+    <MESSAGE value="some test-cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="some test-cases" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
