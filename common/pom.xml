@@ -34,6 +34,7 @@
         <module>swagger</module>
         <module>security</module>
         <module>redis</module>
+        <module>framework</module>
     </modules>
 
     <dependencies>
