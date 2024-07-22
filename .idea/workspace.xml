@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="framework utils">
-      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/thread/property/ThreadPoolProperty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="thread pool configuration for framework">
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/config/ResourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/file/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/file/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/file/util/FileUploadUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/manager/AsyncManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/plugin/annotation/Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/plugin/constant/FieldConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/plugin/enums/QueryWay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/plugin/interceptor/InsertUpdateMyBatisInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/plugin/query/QueryWrapperPlus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/property/PageProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/thread/config/ThreadPoolConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/thread/property/ThreadPoolProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/thread/property/ThreadPoolProperty.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +29,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Enum" />
         <option value="AnnotationType" />
-        <option value="Interface" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -208,7 +220,8 @@
       <workItem from="1721357805556" duration="1771000" />
       <workItem from="1721365241213" duration="1441000" />
       <workItem from="1721366691876" duration="3352000" />
-      <workItem from="1721377689146" duration="5599000" />
+      <workItem from="1721377689146" duration="6818000" />
+      <workItem from="1721616919524" duration="11851000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -314,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721387515246</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="thread pool configuration for framework">
+      <option name="closed" value="true" />
+      <created>1721387974467</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1721387974467</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +364,8 @@
     <MESSAGE value="redis config" />
     <MESSAGE value="redis config with limit script" />
     <MESSAGE value="framework utils" />
-    <option name="LAST_COMMIT_MESSAGE" value="framework utils" />
+    <MESSAGE value="thread pool configuration for framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="thread pool configuration for framework" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
