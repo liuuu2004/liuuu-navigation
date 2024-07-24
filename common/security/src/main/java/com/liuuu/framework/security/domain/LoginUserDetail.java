@@ -10,7 +10,7 @@ import java.util.*;
  * 登陆用户身份
  *
  * @Author Liuuu
- * @Date 2024/7/23
+ * @Date 2024/7/24
  */
 @Data
 public class LoginUserDetail implements UserDetails {
