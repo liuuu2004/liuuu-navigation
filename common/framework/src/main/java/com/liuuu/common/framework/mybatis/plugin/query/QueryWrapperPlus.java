@@ -12,7 +12,6 @@ import com.liuuu.common.core.util.string.StrUtils;
 import com.liuuu.common.framework.mybatis.plugin.annotation.Query;
 import com.liuuu.common.framework.mybatis.plugin.constant.FieldConstant;
 import com.liuuu.common.framework.mybatis.plugin.enums.QueryWay;
-import com.sun.tools.javac.tree.JCTree;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.ClassUtils;

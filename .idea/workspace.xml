@@ -4,10 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="mybatis wrappers">
-      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/plugin/query/LambdaQueryWrapperPlus.java" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="mybatis page utils">
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/web/controller/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/web/mapper/BaseMapperPlus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/web/service/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/web/service/impl/BaseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/security/src/main/java/com/liuuu/framework/security/constant/SecurityConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/security/src/main/java/com/liuuu/framework/security/domain/ApiPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/security/src/main/java/com/liuuu/framework/security/domain/LoginUserDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/security/src/main/java/com/liuuu/framework/security/property/SecurityProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/security/src/main/java/com/liuuu/framework/security/property/TokenProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/security/src/main/java/com/liuuu/framework/security/service/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/security/src/main/java/com/liuuu/framework/security/service/impl/AuthorizationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/security/src/main/java/com/liuuu/framework/security/service/impl/TokenServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/security/src/main/java/com/liuuu/framework/security/util/SecurityUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/plugin/query/QueryWrapperPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/plugin/query/QueryWrapperPlus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/redis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/security/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,10 +32,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="AnnotationType" />
         <option value="package-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -212,7 +227,8 @@
       <workItem from="1721616919524" duration="15956000" />
       <workItem from="1721703200839" duration="2883000" />
       <workItem from="1721788425701" duration="5000" />
-      <workItem from="1721788436204" duration="2638000" />
+      <workItem from="1721788436204" duration="6266000" />
+      <workItem from="1721799926344" duration="5802000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -342,7 +358,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721652601994</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="mybatis wrappers query">
+      <option name="closed" value="true" />
+      <created>1721791088213</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1721791088213</updated>
+    </task>
+    <task id="LOCAL-00018" summary="mybatis page utils">
+      <option name="closed" value="true" />
+      <created>1721791400743</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1721791400743</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,7 +406,9 @@
     <MESSAGE value="thread pool configuration for framework" />
     <MESSAGE value="mybatis configurations and wrappers" />
     <MESSAGE value="mybatis wrappers" />
-    <option name="LAST_COMMIT_MESSAGE" value="mybatis wrappers" />
+    <MESSAGE value="mybatis wrappers query" />
+    <MESSAGE value="mybatis page utils" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis page utils" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

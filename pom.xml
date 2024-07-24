@@ -73,11 +73,11 @@
 <!--            </dependency>-->
 
             <!-- 通用缓存模块 -->
-<!--            <dependency>-->
-<!--                <groupId>com.liuuu</groupId>-->
-<!--                <artifactId>liuuu-navigation-common-redis</artifactId>-->
-<!--                <version>${liuuu.navigation.common.redis.version}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>com.liuuu</groupId>
+                <artifactId>redis</artifactId>
+                <version>${liuuu.navigation.common.redis.version}</version>
+            </dependency>
 
             <!-- 日志模块 -->
             <dependency>
@@ -87,25 +87,25 @@
             </dependency>
 
             <!-- 安全认证模块 -->
-<!--            <dependency>-->
-<!--                <groupId>com.liuuu</groupId>-->
-<!--                <artifactId>liuuu-navigation-common-security</artifactId>-->
-<!--                <version>${liuuu.navigation.common.security.version}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>com.liuuu</groupId>
+                <artifactId>security</artifactId>
+                <version>${liuuu.navigation.common.security.version}</version>
+            </dependency>
 
             <!-- 通用接口文档模块 -->
-<!--            <dependency>-->
-<!--                <groupId>com.liuuu</groupId>-->
-<!--                <artifactId>swagger</artifactId>-->
-<!--                <version>${liuuu.navigation.common.swagger.version}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>com.liuuu</groupId>
+                <artifactId>swagger</artifactId>
+                <version>${liuuu.navigation.common.swagger.version}</version>
+            </dependency>
 
             <!-- 通用框架模块 -->
-<!--            <dependency>-->
-<!--                <groupId>com.liuuu</groupId>-->
-<!--                <artifactId>liuuu-navigation-common-framework</artifactId>-->
-<!--                <version>${liuuu.navigation.common.framework.version}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>com.liuuu</groupId>
+                <artifactId>framework</artifactId>
+                <version>${liuuu.navigation.common.framework.version}</version>
+            </dependency>
 
             <!-- 系统模块 -->
 <!--            <dependency>-->
