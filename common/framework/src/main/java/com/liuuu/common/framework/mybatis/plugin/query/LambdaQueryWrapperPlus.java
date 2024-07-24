@@ -77,7 +77,7 @@ public class LambdaQueryWrapperPlus<T> extends LambdaQueryWrapper<T> {
     /**
      * 小于
      * @param column
-     * @param values
+     * @param value
      * @return
      */
     public LambdaQueryWrapperPlus<T> ltIf(SFunction<T, ?> column, Object value) {
