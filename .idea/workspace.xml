@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="thread pool configuration for framework">
-      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/config/ResourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/file/service/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/file/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/file/util/FileUploadUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/manager/AsyncManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/plugin/annotation/Query.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/plugin/constant/FieldConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/plugin/enums/QueryWay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/plugin/interceptor/InsertUpdateMyBatisInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/plugin/query/QueryWrapperPlus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/property/PageProperty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/thread/config/ThreadPoolConfig.java" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="mybatis wrappers">
+      <change afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/plugin/query/LambdaQueryWrapperPlus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/thread/property/ThreadPoolProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/thread/property/ThreadPoolProperty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/plugin/query/QueryWrapperPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/framework/src/main/java/com/liuuu/common/framework/mybatis/plugin/query/QueryWrapperPlus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +209,10 @@
       <workItem from="1721365241213" duration="1441000" />
       <workItem from="1721366691876" duration="3352000" />
       <workItem from="1721377689146" duration="6818000" />
-      <workItem from="1721616919524" duration="11851000" />
+      <workItem from="1721616919524" duration="15956000" />
+      <workItem from="1721703200839" duration="2883000" />
+      <workItem from="1721788425701" duration="5000" />
+      <workItem from="1721788436204" duration="2638000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -335,7 +326,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721387974467</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="mybatis configurations and wrappers">
+      <option name="closed" value="true" />
+      <created>1721644110953</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1721644110953</updated>
+    </task>
+    <task id="LOCAL-00016" summary="mybatis wrappers">
+      <option name="closed" value="true" />
+      <created>1721652601994</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1721652601994</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +372,9 @@
     <MESSAGE value="redis config with limit script" />
     <MESSAGE value="framework utils" />
     <MESSAGE value="thread pool configuration for framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="thread pool configuration for framework" />
+    <MESSAGE value="mybatis configurations and wrappers" />
+    <MESSAGE value="mybatis wrappers" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis wrappers" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
