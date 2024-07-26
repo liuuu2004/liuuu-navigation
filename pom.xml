@@ -142,11 +142,11 @@
             </dependency>
 
             <!-- 系统模块 -->
-<!--            <dependency>-->
-<!--                <groupId>com.liuuu</groupId>-->
-<!--                <artifactId>liuuu-navigation-admin-system</artifactId>-->
-<!--                <version>${liuuu.navigation.admin.system.version}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>com.liuuu</groupId>
+                <artifactId>system</artifactId>
+                <version>${liuuu.navigation.admin.system.version}</version>
+            </dependency>
 
             <!-- Spring Boot -->
             <dependency>
