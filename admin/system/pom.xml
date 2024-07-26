@@ -29,6 +29,11 @@
             <artifactId>log</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.liuuu</groupId>
+            <artifactId>core</artifactId>
+        </dependency>
+
     </dependencies>
 
 

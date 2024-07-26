@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/common/security/pom.xml" />
         <option value="$PROJECT_DIR$/common/redis/pom.xml" />
         <option value="$PROJECT_DIR$/common/framework/pom.xml" />
+        <option value="$PROJECT_DIR$/common/rate-limiter/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

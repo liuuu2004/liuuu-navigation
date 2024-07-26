@@ -4,19 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="Security">
-      <change afterPath="$PROJECT_DIR$/common/rate-limiter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/rate-limiter/src/main/java/com/liuuu/common/rate/limiter/annotation/RateLimiter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/rate-limiter/src/main/java/com/liuuu/common/rate/limiter/aspect/RateLimiterAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/rate-limiter/src/main/java/com/liuuu/common/rate/limiter/constant/RateLimiterConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/rate-limiter/src/main/java/com/liuuu/common/rate/limiter/enums/RateLimiterType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/rate-limiter/src/main/java/com/liuuu/common/rate/limiter/exception/RateLimiterException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/security/src/main/java/com/liuuu/framework/security/handler/AccessDeniedExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/security/src/main/java/com/liuuu/framework/security/handler/AuthenticationEntryPointImpl.java" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="rate limiter">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/po/SysApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/po/SysApiCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/po/SysApiMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/vo/SysApiCategoryVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/vo/SysApiVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/login/controller/LogLoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/login/dto/LogLoginAddDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/login/dto/LogLoginPageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/login/enums/LogLoginStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/login/factory/LogLoginAsyncFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/login/mapper/LogLoginMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/login/mapstruct/LogLoginConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/login/po/LogLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/login/service/LogLoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/login/service/impl/LogLoginServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/login/vo/LogLoginVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/operation/config/LogMqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/operation/dto/LogOperationPageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/operation/mapper/LogOperationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/operation/mapstruct/LogOperationConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/operation/mq/LogOperationMq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/operation/po/LogOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/operation/service/LogOperationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/operation/service/impl/LogOperationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/operation/vo/LogOperationVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/resources/mapper/log/LogOperationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/dto/SysApiAddDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/dto/SysApiAddDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/security/src/main/java/com/liuuu/framework/security/service/impl/AuthorizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/security/src/main/java/com/liuuu/framework/security/service/impl/AuthorizationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,10 +49,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="package-info" />
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -78,6 +100,7 @@
     "Maven.liuuu-navigation [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/EnterpriseProject/Java/navigation/liuuu-navigation/liuuu-navigation",
@@ -91,10 +114,16 @@
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\EnterpriseProject\Java\navigation\liuuu-navigation\liuuu-navigation\admin\system\src\main\resources\mapper" />
       <recent name="D:\EnterpriseProject\Java\navigation\liuuu-navigation\liuuu-navigation\common\swagger" />
       <recent name="D:\EnterpriseProject\Java\navigation\liuuu-navigation\liuuu-navigation\common\log" />
     </key>
@@ -227,7 +256,8 @@
       <workItem from="1721799926344" duration="6461000" />
       <workItem from="1721813080867" duration="52000" />
       <workItem from="1721813141649" duration="89000" />
-      <workItem from="1721874504841" duration="5183000" />
+      <workItem from="1721874504841" duration="6954000" />
+      <workItem from="1721967295805" duration="11351000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -389,7 +419,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721813032854</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="rate limiter">
+      <option name="closed" value="true" />
+      <created>1721883018552</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1721883018552</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +462,8 @@
     <MESSAGE value="mybatis wrappers query" />
     <MESSAGE value="mybatis page utils" />
     <MESSAGE value="Security" />
-    <option name="LAST_COMMIT_MESSAGE" value="Security" />
+    <MESSAGE value="rate limiter" />
+    <option name="LAST_COMMIT_MESSAGE" value="rate limiter" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
