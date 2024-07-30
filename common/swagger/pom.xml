@@ -13,6 +13,7 @@
     <name>liuuu-navigation-common-swagger</name>
     <description>接口文档模块</description>
     <version>1.0.0</version>
+    <packaging>pom</packaging>
 
     <dependencies>
         <!-- knife4j 接口文档 -->

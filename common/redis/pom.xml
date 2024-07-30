@@ -14,6 +14,7 @@
     <name>liuuu-navigation-common-redis</name>
     <description>redis 缓存</description>
     <version>1.0.0</version>
+    <packaging>pom</packaging>
 
     <dependencies>
         <dependency>

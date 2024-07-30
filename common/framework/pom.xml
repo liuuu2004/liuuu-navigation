@@ -14,6 +14,7 @@
     <name>liuuu-navigation-common-framework</name>
     <description>通用框架模块</description>
     <version>1.0.0</version>
+    <packaging>pom</packaging>
 
     <dependencies>
         <!-- 通用核心模块 -->

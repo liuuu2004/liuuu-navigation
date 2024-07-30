@@ -13,6 +13,7 @@
     <name>liuuu-navigation-common-log</name>
     <description>日志模块</description>
     <version>1.0.0</version>
+    <packaging>pom</packaging>
 
     <dependencies>
         <!-- 框架模块 -->
