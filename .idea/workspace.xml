@@ -4,33 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="add">
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/mapper/SysApiMenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/constant/MenuConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/dto/SysMenuAddDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/dto/SysMenuAuthApiDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/dto/SysMenuListDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/dto/SysMenuUpdateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/enums/MenuShowStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/enums/MenuStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/enums/MenuType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/mapstruct/SysMenuConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/po/SysMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/service/SysMenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/vo/MetaVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/vo/RouterVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/vo/SysMenuAuthApiVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/vo/SysMenuVO.java" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.system.menu">
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/mapper/SysApiCategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/mapper/SysApiMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/mapstruct/SysApiCategoryConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/mapstruct/SysApiConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/service/SysApiCategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/service/SysApiMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/service/SysApiService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/service/impl/SysApiServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/controller/SysMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/mapper/SysApiMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/service/impl/SysMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/resources/mapper/api/SysApiCategoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/resources/mapper/api/SysApiMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/framework/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/log/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/log/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/rate-limiter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/rate-limiter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/redis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/security/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/swagger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/swagger/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,52 +65,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.IPUtilsTest.executor": "Run",
-    "JUnit.IdUtilsTest.testSimpleUUID.executor": "Run",
-    "JUnit.IdWorkerTest.executor": "Run",
-    "JUnit.IdWorkerTest.testClockBackwards.executor": "Run",
-    "JUnit.IdWorkerTest.testConcurrentNextId.executor": "Run",
-    "JUnit.IdWorkerTest.testMaxValues.executor": "Run",
-    "JUnit.IdWorkerTest.testPerformance.executor": "Run",
-    "JUnit.LogOperationMapperTest.executor": "Run",
-    "JUnit.LogOperationMapperTest.testLogOperationMapper.executor": "Run",
-    "JUnit.StrUtilsTest.executor": "Run",
-    "JUnit.StrUtilsTest.testFormat (1).executor": "Run",
-    "JUnit.StrUtilsTest.testFormat.executor": "Run",
-    "JUnit.StrUtilsTest.testIsHttp.executor": "Run",
-    "JUnit.StrUtilsTest.testIsNotNullBlank.executor": "Run",
-    "JUnit.StrUtilsTest.testMatches.executor": "Run",
-    "JUnit.ThreadsTest.testShutdownAndAwaitTermination.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.core [install].executor": "Run",
-    "Maven.liuuu-navigation [clean,install...].executor": "Run",
-    "Maven.liuuu-navigation [install].executor": "Run",
-    "Maven.system [install].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/EnterpriseProject/Java/navigation/liuuu-navigation/liuuu-navigation",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.IPUtilsTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IdUtilsTest.testSimpleUUID.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IdWorkerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IdWorkerTest.testClockBackwards.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IdWorkerTest.testConcurrentNextId.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IdWorkerTest.testMaxValues.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IdWorkerTest.testPerformance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogOperationMapperTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogOperationMapperTest.testLogOperationMapper.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StrUtilsTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StrUtilsTest.testFormat (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StrUtilsTest.testFormat.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StrUtilsTest.testIsHttp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StrUtilsTest.testIsNotNullBlank.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StrUtilsTest.testMatches.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ThreadsTest.testShutdownAndAwaitTermination.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.core [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.liuuu-navigation [clean,install...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.liuuu-navigation [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.system [install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/EnterpriseProject/Java/navigation/liuuu-navigation/liuuu-navigation&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\EnterpriseProject\Java\navigation\liuuu-navigation\liuuu-navigation\admin\system\src\main\resources\mapper" />
@@ -263,7 +251,8 @@
       <workItem from="1722219064870" duration="6453000" />
       <workItem from="1722303154810" duration="7092000" />
       <workItem from="1722312355808" duration="230000" />
-      <workItem from="1722312745857" duration="5842000" />
+      <workItem from="1722312745857" duration="6936000" />
+      <workItem from="1722327559034" duration="5800000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -473,7 +462,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722305308869</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="admin.system.menu">
+      <option name="closed" value="true" />
+      <created>1722321009291</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1722321009291</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,7 +510,8 @@
     <MESSAGE value="admin.system.user" />
     <MESSAGE value="admin.system.user.service" />
     <MESSAGE value="add" />
-    <option name="LAST_COMMIT_MESSAGE" value="add" />
+    <MESSAGE value="admin.system.menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin.system.menu" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
