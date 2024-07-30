@@ -24,7 +24,7 @@ public enum OperateType {
      */
     NAV(4);
 
-    private final Integer code;
+    public final Integer code;
 
     OperateType(Integer code) {
         this.code = code;

@@ -16,30 +16,57 @@
     <version>1.0.0</version>
 
     <dependencies>
-
         <!-- Swagger 接口文档 -->
         <dependency>
             <groupId>com.liuuu</groupId>
             <artifactId>swagger</artifactId>
+            <version>1.0.0</version>
         </dependency>
 
         <!-- 日志模块 -->
         <dependency>
             <groupId>com.liuuu</groupId>
             <artifactId>log</artifactId>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>com.liuuu</groupId>
             <artifactId>core</artifactId>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>com.liuuu</groupId>
             <artifactId>security</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.10</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
-
 
 </project>

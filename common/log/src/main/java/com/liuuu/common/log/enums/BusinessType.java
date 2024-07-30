@@ -24,7 +24,7 @@ public enum BusinessType {
      */
     DELETE(4);
 
-    private final Integer code;
+    public final Integer code;
 
     BusinessType(Integer code) {
         this.code = code;

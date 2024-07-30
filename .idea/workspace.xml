@@ -4,21 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.system.log.login&amp;operation">
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/dto/SySUserUpdateInfoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/dto/SysUserAddDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/dto/SysUserPageDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/dto/SysUserResetPasswordDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/dto/SysUserResetUserPasswordDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/dto/SysUserUpdateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/enums/UserType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/mapstruct/SysUserConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/po/SysUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/po/SysUserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/vo/SysUserVO.java" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.system.user.service">
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/mapper/SysUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/mapper/SysUserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/resources/mapper/user/SysUserRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/test/java/com/liuuu/admin/system/log/operation/mapper/LogOperationMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/test/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/test/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/test/resources/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/operation/service/impl/LogOperationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/log/operation/service/impl/LogOperationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/log/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/log/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/aspect/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/aspect/LogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/dto/LogDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/dto/LogDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/enums/BusinessType.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/enums/BusinessType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/enums/OperateType.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/log/src/main/java/com/liuuu/common/log/enums/OperateType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +35,8 @@
         <option value="package-info" />
         <option value="AnnotationType" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,6 +70,8 @@
     &quot;JUnit.IdWorkerTest.testConcurrentNextId.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.IdWorkerTest.testMaxValues.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.IdWorkerTest.testPerformance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogOperationMapperTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogOperationMapperTest.testLogOperationMapper.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.StrUtilsTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.StrUtilsTest.testFormat (1).executor&quot;: &quot;Run&quot;,
     &quot;JUnit.StrUtilsTest.testFormat.executor&quot;: &quot;Run&quot;,
@@ -78,6 +83,7 @@
     &quot;Maven.core [install].executor&quot;: &quot;Run&quot;,
     &quot;Maven.liuuu-navigation [clean,install...].executor&quot;: &quot;Run&quot;,
     &quot;Maven.liuuu-navigation [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.system [install].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -108,7 +114,7 @@
       <recent name="D:\EnterpriseProject\Java\navigation\liuuu-navigation\liuuu-navigation\common\log" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IdWorkerTest">
+  <component name="RunManager" selected="JUnit.LogOperationMapperTest.testLogOperationMapper">
     <configuration name="IdWorkerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core" />
       <extension name="coverage">
@@ -120,38 +126,6 @@
       <option name="PACKAGE_NAME" value="com.liuuu.common.core.util.id" />
       <option name="MAIN_CLASS_NAME" value="com.liuuu.common.core.util.id.IdWorkerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IdWorkerTest.testClockBackwards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.liuuu.common.core.util.id.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.liuuu.common.core.util.id" />
-      <option name="MAIN_CLASS_NAME" value="com.liuuu.common.core.util.id.IdWorkerTest" />
-      <option name="METHOD_NAME" value="testClockBackwards" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IdWorkerTest.testConcurrentNextId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.liuuu.common.core.util.id.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.liuuu.common.core.util.id" />
-      <option name="MAIN_CLASS_NAME" value="com.liuuu.common.core.util.id.IdWorkerTest" />
-      <option name="METHOD_NAME" value="testConcurrentNextId" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -188,13 +162,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LogOperationMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liuuu.admin.system.log.operation.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liuuu.admin.system.log.operation.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.liuuu.admin.system.log.operation.mapper.LogOperationMapperTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogOperationMapperTest.testLogOperationMapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liuuu.admin.system.log.operation.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liuuu.admin.system.log.operation.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.liuuu.admin.system.log.operation.mapper.LogOperationMapperTest" />
+      <option name="METHOD_NAME" value="testLogOperationMapper" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LogOperationMapperTest.testLogOperationMapper" />
+        <item itemvalue="JUnit.LogOperationMapperTest" />
         <item itemvalue="JUnit.IdWorkerTest" />
         <item itemvalue="JUnit.IdWorkerTest.testPerformance" />
         <item itemvalue="JUnit.IdWorkerTest.testMaxValues" />
-        <item itemvalue="JUnit.IdWorkerTest.testClockBackwards" />
-        <item itemvalue="JUnit.IdWorkerTest.testConcurrentNextId" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +244,9 @@
       <workItem from="1721874504841" duration="6954000" />
       <workItem from="1721967295805" duration="12570000" />
       <workItem from="1722144977945" duration="4317000" />
-      <workItem from="1722149306383" duration="611000" />
+      <workItem from="1722149306383" duration="5941000" />
+      <workItem from="1722219064870" duration="6453000" />
+      <workItem from="1722303154810" duration="1651000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -425,7 +432,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721987877373</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="admin.system.user">
+      <option name="closed" value="true" />
+      <created>1722149938105</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1722149938105</updated>
+    </task>
+    <task id="LOCAL-00025" summary="admin.system.user.service">
+      <option name="closed" value="true" />
+      <created>1722153793990</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1722153793990</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,7 +485,9 @@
     <MESSAGE value="Security" />
     <MESSAGE value="rate limiter" />
     <MESSAGE value="admin.system.log.login&amp;operation" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin.system.log.login&amp;operation" />
+    <MESSAGE value="admin.system.user" />
+    <MESSAGE value="admin.system.user.service" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin.system.user.service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -3,6 +3,7 @@ package com.liuuu.common.log.dto;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * 日志新增
@@ -78,7 +79,7 @@ public class LogDTO implements Serializable {
     /**
      * 操作时间
      */
-    private String gmtOperate;
+    private Date gmtOperate;
 
     /**
      * 错误信息

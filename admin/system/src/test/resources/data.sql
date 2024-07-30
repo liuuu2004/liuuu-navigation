@@ -1,0 +1,3 @@
+INSERT INTO `sys_user` VALUES (43728307660783616, 'test_sys_username_1', 'test_sys_user_nickname1', 'test_sys_user_password1', 1, 1, 'test_sys_user_email1@qq.com', '', '', 1, 'i am admin', 1, 43728307660783616, '2022-07-24 16:02:02', 43728307660783616, '2023-01-04 22:44:48');
+INSERT INTO `sys_user` VALUES (43767104519798784, 'test_sys_username_2', 'test_sys_user_nickname2', 'test_sys_user_password2', 3, 1, 'test_sys_user_email2@qq.com', '', '', 1, '', 1, 43728307660783616, '2022-07-24 18:34:51', 43728307660783616, '2022-08-15 00:03:28');
+INSERT INTO `sys_user` VALUES (43767196689629184, 'test_sys_username_3', 'test_sys_user_nickname3', 'test_sys_user_password3', 2, 1, 'test_sys_user_email3@qq.com', '', '', 1, '', 1, 43728307660783616, '2022-07-24 18:35:13', NULL, NULL);
