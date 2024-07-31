@@ -1,6 +1,7 @@
 package com.liuuu.admin.system.api.mapstruct;
 
 import com.liuuu.admin.system.api.dto.SysApiAddDTO;
+import com.liuuu.admin.system.api.dto.SysApiUpdateDTO;
 import com.liuuu.admin.system.api.po.SysApi;
 import com.liuuu.admin.system.api.vo.SysApiVO;
 import com.liuuu.admin.system.menu.dto.SysMenuUpdateDTO;
@@ -29,5 +30,5 @@ public interface SysApiConverter {
 
     SysApi convert(SysApiAddDTO sysApiAddDTO);
 
-    SysApi convert(SysMenuUpdateDTO sysMenuUpdateDTO);
+    SysApi convert(SysApiUpdateDTO sysApiUpdateDTO);
 }

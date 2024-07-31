@@ -7,6 +7,7 @@ import com.liuuu.admin.system.api.po.SysApiMenu;
 import com.liuuu.admin.system.api.service.SysApiMenuService;
 import com.liuuu.admin.system.api.service.SysApiService;
 import com.liuuu.admin.system.api.vo.SysApiVO;
+import com.liuuu.admin.system.menu.vo.SysMenuAuthApiVO;
 import com.liuuu.common.core.enums.CommonStatus;
 import com.liuuu.common.framework.mybatis.plugin.query.LambdaQueryWrapperPlus;
 import com.liuuu.common.framework.web.service.impl.BaseServiceImpl;
@@ -61,12 +62,37 @@ public class SysApiServiceImpl extends BaseServiceImpl<SysApiMapper, SysApi> imp
         return sysApiMapper.selectMaxSortByCategoryId(apiCategoryId);
     }
 
+    /**
+     * 分配api
+     * @param menuId
+     * @param apiIds
+     */
     @Override
     @Transactional(rollbackFor = Exception.class)
     public void authApi(Long menuId, List<Long> apiIds) {
         if (menuId == null) {
             return;
         }
+        LambdaQueryWrapper<SysApiMenu> apiMenuWrapper = new LambdaQueryWrapper<>();
+        apiMenuWrapper.eq(SysApiMenu::getMenuId, menuId);
+        sysApiMenuService.remove(apiMenuWrapper);
 
+        if (CollectionUtils.isEmpty(apiIds)) {
+            return;
+        }
+
+        List<SysApiMenu> apiMenus = new ArrayList<>();
+        for (Long apiId : apiIds) {
+            SysApiMenu sysApiMenu = new SysApiMenu();
+            sysApiMenu.setMenuId(menuId);
+            sysApiMenu.setApiId(apiId);
+            apiMenus.add(sysApiMenu);
+        }
+        sysApiMenuService.saveBatch(apiMenus);
+    }
+
+    @Override
+    public List<SysMenuAuthApiVO> getAuthApiByMenuId(Long menuId) {
+        return sysApiMapper.selectAuthApiByMenuId(menuId);
     }
 }
