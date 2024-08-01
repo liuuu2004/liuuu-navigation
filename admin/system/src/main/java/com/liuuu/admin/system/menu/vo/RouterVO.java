@@ -3,6 +3,8 @@ package com.liuuu.admin.system.menu.vo;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.List;
@@ -15,6 +17,8 @@ import java.util.List;
  */
 @Data
 @ApiModel("路由配置信息")
+@Setter
+@Getter
 public class RouterVO implements Serializable {
     private static final long serialVersionUID = 1L;
 

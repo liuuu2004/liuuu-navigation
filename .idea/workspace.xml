@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.system.api">
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/controller/SysApiCategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/controller/SysApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/service/impl/SysApiCategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/service/impl/SysApiMenuServiceImpl.java" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.system.api --done">
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/resources/mapper/menu/SysMenuMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/dto/SysApiCategoryAddDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/dto/SysApiCategoryAddDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/dto/SysApiCategoryPageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/dto/SysApiCategoryPageDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/dto/SysApiCategoryUpdateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/dto/SysApiCategoryUpdateDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/dto/SysApiPageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/dto/SysApiPageDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/dto/SysApiUpdateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/dto/SysApiUpdateDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/mapstruct/SysApiConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/mapstruct/SysApiConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/service/SysApiCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/service/SysApiCategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/service/impl/SysApiServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/api/service/impl/SysApiServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/mapper/SysApiMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/mapper/SysMenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/service/impl/SysMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/service/impl/SysMenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/vo/RouterVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/vo/RouterVO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +244,8 @@
       <workItem from="1722312745857" duration="6936000" />
       <workItem from="1722327559034" duration="5800000" />
       <workItem from="1722336448328" duration="17000" />
-      <workItem from="1722398144762" duration="5184000" />
+      <workItem from="1722398144762" duration="8548000" />
+      <workItem from="1722475948119" duration="3505000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -478,7 +471,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722336459694</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="admin.system.api --done">
+      <option name="closed" value="true" />
+      <created>1722408501293</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1722408501293</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,7 +521,8 @@
     <MESSAGE value="add" />
     <MESSAGE value="admin.system.menu" />
     <MESSAGE value="admin.system.api" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin.system.api" />
+    <MESSAGE value="admin.system.api --done" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin.system.api --done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
