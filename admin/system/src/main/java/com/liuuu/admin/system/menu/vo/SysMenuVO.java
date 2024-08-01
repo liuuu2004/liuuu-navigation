@@ -39,7 +39,7 @@ public class SysMenuVO extends BaseVO implements Serializable {
     private String permissionCode;
 
     @ApiModelProperty("路由地址")
-    private String routeUrl;
+    private String routerUrl;
 
     @ApiModelProperty("组件路径")
     private String componentPath;

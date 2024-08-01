@@ -18,6 +18,7 @@ import com.liuuu.admin.system.menu.service.SysMenuService;
 import com.liuuu.admin.system.menu.vo.MetaVO;
 import com.liuuu.admin.system.menu.vo.RouterVO;
 import com.liuuu.admin.system.menu.vo.SysMenuVO;
+import com.liuuu.common.core.constant.CommonConstant;
 import com.liuuu.common.core.enums.CommonStatus;
 import com.liuuu.common.core.enums.YesNo;
 import com.liuuu.common.core.exception.ParamException;
@@ -28,11 +29,14 @@ import com.liuuu.common.framework.web.service.impl.BaseServiceImpl;
 import com.liuuu.framework.security.domain.LoginUserDetail;
 import com.liuuu.framework.security.util.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 
+import java.awt.*;
 import java.util.*;
+import java.util.List;
 import java.util.stream.Collectors;
 
 /**
@@ -87,7 +91,7 @@ public class SysMenuServiceImpl extends BaseServiceImpl<SysMenuMapper, SysMenu> 
             menuVOS = SysMenuConverter.INSTANCE.convertList(menus);
         } else {
             menuVOS = sysMenuMapper.getMenuByUserId(loginUserDetail.getUserId(), CommonStatus.NORMAL.code,
-                    CommonStatus.NORMAL.code, , YesNo.NO.code, menuTypes);
+                    CommonStatus.NORMAL.code , YesNo.NO.code, menuTypes);
         }
         if (CollectionUtils.isEmpty(menuVOS)) {
             return new ArrayList<>();
@@ -233,7 +237,7 @@ public class SysMenuServiceImpl extends BaseServiceImpl<SysMenuMapper, SysMenu> 
             router.setPath(getRouterPath(menu));
             router.setComponent(getComponent(menu));
             router.setQuery(menu.getRouteParam());
-            router.setMeta(new MetaVO(menu.getMenuName(), menu.getMenuIcon(), YesNo.NO.code.equals(menu.getHasCache()), menu.getRouteUrl()));
+            router.setMeta(new MetaVO(menu.getMenuName(), menu.getMenuIcon(), YesNo.NO.code.equals(menu.getHasCache()), menu.getRouterUrl()));
             List<SysMenuVO> cMenus = menu.getChildren();
             if (!CollectionUtils.isEmpty(cMenus) && MenuType.DIRECTORY.code.equals(menu.getMenuType())) {
                 router.setAlwaysShow(true);
@@ -243,10 +247,10 @@ public class SysMenuServiceImpl extends BaseServiceImpl<SysMenuMapper, SysMenu> 
                 router.setMeta(null);
                 List<RouterVO> childrenList = new ArrayList<RouterVO>();
                 RouterVO children = new RouterVO();
-                children.setPath(menu.getRouteUrl());
+                children.setPath(menu.getRouterUrl());
                 children.setComponent(menu.getComponentPath());
-                children.setName(StrUtils.capitalize(menu.getRouteUrl()));
-                children.setMeta(new MetaVO(menu.getMenuName(), menu.getMenuIcon(), YesNo.NO.code.equals(menu.getHasCache()), menu.getRouteUrl()));
+                children.setName(StrUtils.capitalize(menu.getRouterUrl()));
+                children.setMeta(new MetaVO(menu.getMenuName(), menu.getMenuIcon(), YesNo.NO.code.equals(menu.getHasCache()), menu.getRouterUrl()));
                 children.setQuery(menu.getRouteParam());
                 childrenList.add(children);
                 router.setChildren(childrenList);
@@ -255,11 +259,11 @@ public class SysMenuServiceImpl extends BaseServiceImpl<SysMenuMapper, SysMenu> 
                 router.setPath("/");
                 List<RouterVO> childrenList = new ArrayList<RouterVO>();
                 RouterVO children = new RouterVO();
-                String routerPath = innerLinkReplaceEach(menu.getRouteUrl());
+                String routerPath = innerLinkReplaceEach(menu.getRouterUrl());
                 children.setPath(routerPath);
                 children.setComponent(MenuConstant.INNER_LINK);
                 children.setName(StrUtils.capitalize(routerPath));
-                children.setMeta(new MetaVO(menu.getMenuName(), menu.getMenuIcon(), menu.getRouteUrl()));
+                children.setMeta(new MetaVO(menu.getMenuName(), menu.getMenuIcon(), menu.getRouterUrl()));
                 childrenList.add(children);
                 router.setChildren(childrenList);
             }
@@ -272,8 +276,8 @@ public class SysMenuServiceImpl extends BaseServiceImpl<SysMenuMapper, SysMenu> 
      * 获取路由名称
      */
     public String getRouterName(SysMenuVO menu, SysMenuVO parentMenu) {
-        String routerName = (parentMenu != null ? StrUtils.capitalize(parentMenu.getRouteUrl()) : "")
-                + StrUtils.capitalize(menu.getRouteUrl());
+        String routerName = (parentMenu != null ? StrUtils.capitalize(parentMenu.getRouterUrl()) : "")
+                + StrUtils.capitalize(menu.getRouterUrl());
         // 若并非外链且是一级目录
         if (isMenuFrame(menu)) {
             routerName = StrUtils.EMPTY;
@@ -289,6 +293,62 @@ public class SysMenuServiceImpl extends BaseServiceImpl<SysMenuMapper, SysMenu> 
                 && sysMenuVO.getHasFrame().equals(YesNo.NO.code);
     }
 
+    /**
+     * 获取路由地址
+     */
+    public String getRouterPath(SysMenuVO menu) {
+        String routerPath = menu.getRouterUrl();
+        // 内链打开外网方式
+        if (!isRootMenu(menu.getParentId()) && isInnerLink(menu)) {
+            routerPath = innerLinkReplaceEach(routerPath);
+        }
+        // 非外链并且是一级目录
+        if (isRootMenu(menu.getParentId()) && MenuType.DIRECTORY.code.equals(menu.getMenuType())
+                && YesNo.NO.code.equals(menu.getHasFrame())) {
+            routerPath = "/" + menu.getRouterUrl();
+        } else if (isMenuFrame(menu)) {
+            routerPath = "/";
+        }
+        return routerPath;
+    }
+
+    /**
+     * 是否为内链组件
+     */
+    public boolean isInnerLink(SysMenuVO menu) {
+        return YesNo.NO.code.equals(menu.getHasFrame()) && StrUtils.isHttp(menu.getRouterUrl());
+    }
+
+    /**
+     * 内链域名特殊字符替换
+     */
+    public String innerLinkReplaceEach(String path) {
+        return StrUtils.replaceEach(path, new String[] {CommonConstant.HTTP, CommonConstant.HTTPS },
+                new String[] { "", "" });
+    }
+
+    /**
+     * 获取组件信息
+     */
+    public String getComponent(SysMenuVO menu) {
+        String component = MenuConstant.LAYOUT;
+        if (StrUtils.isNotBlank(menu.getComponentPath()) && !isMenuFrame(menu)) {
+            component = menu.getComponentPath();
+        } else if (StrUtils.isBlank(menu.getComponentPath()) && !isRootMenu(menu.getParentId()) && isInnerLink(menu)) {
+            component = MenuConstant.INNER_LINK;
+        } else if (StrUtils.isBlank(menu.getComponentPath()) && isParentView(menu)) {
+            component = MenuConstant.PARENT_VIEW;
+        }
+        return component;
+    }
+
+    public boolean isParentView(SysMenuVO menu) {
+        return !isRootMenu(menu.getParentId()) && MenuType.DIRECTORY.code.equals(menu.getMenuType());
+    }
+
+    public boolean isRootMenu(Long parentId) {
+        return parentId == null || parentId == 0;
+    }
 
 
 }
