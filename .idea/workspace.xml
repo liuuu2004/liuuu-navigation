@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.system.menu.service.impl">
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.system.menu --done">
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/controller/SysUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/controller/SysUserInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/service/impl/SysMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/service/impl/SysMenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/vo/SysMenuVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/menu/vo/SysMenuVO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,6 +244,9 @@
       <workItem from="1722336448328" duration="17000" />
       <workItem from="1722398144762" duration="8548000" />
       <workItem from="1722475948119" duration="4809000" />
+      <workItem from="1722481593278" duration="119000" />
+      <workItem from="1722481926227" duration="1229000" />
+      <workItem from="1722565027697" duration="1603000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -485,7 +488,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722479485352</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="admin.system.menu --done">
+      <option name="closed" value="true" />
+      <created>1722481640797</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1722481640797</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +514,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Enums and constants" />
     <MESSAGE value="HttpUtils" />
     <MESSAGE value="stringUtils" />
     <MESSAGE value="NetUtils(ip)" />
@@ -528,7 +538,8 @@
     <MESSAGE value="admin.system.api" />
     <MESSAGE value="admin.system.api --done" />
     <MESSAGE value="admin.system.menu.service.impl" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin.system.menu.service.impl" />
+    <MESSAGE value="admin.system.menu --done" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin.system.menu --done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
