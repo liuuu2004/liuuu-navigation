@@ -16,8 +16,10 @@ import com.liuuu.admin.system.user.vo.SysUserVO;
 import com.liuuu.common.core.enums.CommonStatus;
 import com.liuuu.common.core.exception.ParamException;
 import com.liuuu.common.core.util.message.MessageUtils;
+import com.liuuu.common.core.util.string.StrUtils;
 import com.liuuu.common.framework.mybatis.page.vo.PageVO;
 import com.liuuu.common.framework.web.service.impl.BaseServiceImpl;
+import com.liuuu.framework.security.constant.SecurityConstant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -131,13 +133,13 @@ public class SysRoleServiceImpl extends BaseServiceImpl<SysRoleMapper, SysRole> 
         }
         List<Long> idList = Arrays.asList(ids);
         // 判断是否为超级管理员
-        if (isSuperAdminByRoleIds(idList)) {
+        if (isSuperAdminRoleByRoleIds(idList)) {
             throw new ParamException(MessageUtils.message("role.super.admin.not.operation"));
         }
 
         // 判断角色是否有关联用户
         if (sysUserRoleService.isAssociateUser(idList)) {
-            throw new ParamException(MessageUtils.message("role.is.associate.user"))
+            throw new ParamException(MessageUtils.message("role.is.associate.user"));
         }
 
         // 删除角色
@@ -233,5 +235,48 @@ public class SysRoleServiceImpl extends BaseServiceImpl<SysRoleMapper, SysRole> 
 
         // 插入角色和用户直接的关系
         sysUserRoleService.saveBatch(roleId, userIds);
+    }
+
+    /**
+     * 取消授权
+     * @param deleteDTO
+     */
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public void removeAuthUser(SysRoleAuthUserDeleteDTO deleteDTO) {
+        sysUserRoleService.remove(deleteDTO.getRoleId(), deleteDTO.getUserIds());
+    }
+
+    /**
+     * 角色编码是否存在
+     * @param roleCode
+     * @param roleId
+     * @return
+     */
+    private boolean isExistRoleCode(String roleCode, Long roleId) {
+        if (StrUtils.isBlank(roleCode)) {
+            return false;
+        }
+        LambdaQueryWrapper<SysRole> wrapper = new LambdaQueryWrapper<>();
+        wrapper.eq(SysRole::getRoleCode, roleCode);
+        if (roleId != null) {
+            wrapper.ne(SysRole::getId, roleId);
+        }
+        return sysRoleMapper.selectCount(wrapper) > 0;
+    }
+
+    /**
+     * 判断是否为超级管理员
+     * @param roleIds
+     * @return
+     */
+    private boolean isSuperAdminRoleByRoleIds(List<Long> roleIds) {
+        if (CollectionUtils.isEmpty(roleIds)) {
+            return false;
+        }
+        LambdaQueryWrapper<SysRole> wrapper = new LambdaQueryWrapper<>();
+        wrapper.in(SysRole::getId, roleIds);
+        wrapper.eq(SysRole::getRoleCode, SecurityConstant.SUPER_ADMIN_ROLE_CODE);
+        return sysRoleMapper.selectCount(wrapper) > 0;
     }
 }
