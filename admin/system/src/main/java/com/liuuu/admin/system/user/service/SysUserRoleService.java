@@ -11,7 +11,7 @@ import java.util.List;
  * @Author Liuuu
  * @Date 2024/7/28
  */
-public interface SysUserRolesService extends BaseService<SysUserRole> {
+public interface SysUserRoleService extends BaseService<SysUserRole> {
     /**
      * 通过角色id获取用户ids
      * @param roleId
