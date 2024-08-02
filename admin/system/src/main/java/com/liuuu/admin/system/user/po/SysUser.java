@@ -22,7 +22,7 @@ public class SysUser implements Serializable {
 
     private String username;
 
-    private String nockName;
+    private String nickName;
 
     private String password;
 
