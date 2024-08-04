@@ -257,7 +257,7 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserMapper, SysUser> 
 
         if (StrUtils.isNotBlank(sysUserResetUserPasswordDTO.getOldPassword())) {
             if (!SecurityUtils.matchesPassword(sysUserResetUserPasswordDTO.getOldPassword(), loginUser.getPassword())) {
-                throw new ParamException(MessageUtils.message("reset.user.password.old.not.matches"))
+                throw new ParamException(MessageUtils.message("reset.user.password.old.not.matches"));
             }
             if (SecurityUtils.matchesPassword(sysUserResetUserPasswordDTO.getNewPassword(), loginUser.getPassword())) {
                 throw new ParamException(MessageUtils.message("reset.user.password.old.equal.new"));

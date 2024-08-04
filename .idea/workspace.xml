@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.system.role --done">
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.system.user --done">
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/service/impl/SysUserInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/service/impl/SysUserRoleServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/po/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/po/SysUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/service/impl/SysUserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -247,7 +248,8 @@
       <workItem from="1722481593278" duration="119000" />
       <workItem from="1722481926227" duration="1229000" />
       <workItem from="1722565027697" duration="12344000" />
-      <workItem from="1722591223037" duration="2674000" />
+      <workItem from="1722591223037" duration="3914000" />
+      <workItem from="1722735548506" duration="2054000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -521,7 +523,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722580312417</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="admin.system.user --done">
+      <option name="closed" value="true" />
+      <created>1722593908293</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1722593908293</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +549,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="some test-cases" />
     <MESSAGE value="some web utils, vo and response result" />
     <MESSAGE value="swagger finished" />
     <MESSAGE value="redis config" />
@@ -564,7 +573,8 @@
     <MESSAGE value="admin.system.user.controller  --done" />
     <MESSAGE value="admin.system.role" />
     <MESSAGE value="admin.system.role --done" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin.system.role --done" />
+    <MESSAGE value="admin.system.user --done" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin.system.user --done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
