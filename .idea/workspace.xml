@@ -4,29 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.system.user --done">
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/dto/SysDictionaryAddDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/dto/SysDictionaryDataAddDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/dto/SysDictionaryDataPageDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/dto/SysDictionaryDataUpdateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/dto/SysDictionaryPageDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/dto/SysDictionaryUpdateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/mapper/SysDictionaryDataMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/mapper/SysDictionaryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/mapstruct/SysDictionaryConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/mapstruct/SysDictionaryDataConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/po/SysDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/po/SysDictionaryData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/service/SysDictionaryDataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/service/SysDictionaryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/service/impl/SysDictionaryDataServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/service/impl/SysDictionaryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/vo/DictionaryDataInfoVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/vo/DictionaryInfoVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/vo/SysDictionaryDataVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/vo/SysDictionaryVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/resources/mapper/dictionary/SysDictionaryDataMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/resources/mapper/dictionary/SysDictionaryMapper.xml" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.system.dictionary --done">
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/param/constant/SysParamConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/param/dto/SysParamAddDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/param/dto/SysParamPageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/param/dto/SysParamUpdateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/param/mapper/SysParamMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/param/mapstruct/SysParamConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/param/po/SysParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/param/service/SysParamService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/param/service/impl/SysParamServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/param/vo/SysParamVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/resources/mapper/param/SysParamMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -268,7 +257,8 @@
       <workItem from="1722481926227" duration="1229000" />
       <workItem from="1722565027697" duration="12344000" />
       <workItem from="1722591223037" duration="3914000" />
-      <workItem from="1722735548506" duration="8658000" />
+      <workItem from="1722735548506" duration="9268000" />
+      <workItem from="1722747946635" duration="1379000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -558,7 +548,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722737605916</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="admin.system.dictionary --done">
+      <option name="closed" value="true" />
+      <created>1722747341390</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1722747341390</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,7 +574,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="some web utils, vo and response result" />
     <MESSAGE value="swagger finished" />
     <MESSAGE value="redis config" />
     <MESSAGE value="redis config with limit script" />
@@ -601,7 +598,8 @@
     <MESSAGE value="admin.system.role" />
     <MESSAGE value="admin.system.role --done" />
     <MESSAGE value="admin.system.user --done" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin.system.user --done" />
+    <MESSAGE value="admin.system.dictionary --done" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin.system.dictionary --done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
