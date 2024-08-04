@@ -5,10 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.system.user --done">
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/service/impl/SysUserInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/service/impl/SysUserRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/dto/SysDictionaryAddDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/dto/SysDictionaryDataAddDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/dto/SysDictionaryDataPageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/dto/SysDictionaryDataUpdateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/dto/SysDictionaryPageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/dto/SysDictionaryUpdateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/mapper/SysDictionaryDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/mapper/SysDictionaryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/mapstruct/SysDictionaryConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/mapstruct/SysDictionaryDataConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/po/SysDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/po/SysDictionaryData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/service/SysDictionaryDataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/service/SysDictionaryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/service/impl/SysDictionaryDataServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/service/impl/SysDictionaryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/vo/DictionaryDataInfoVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/vo/DictionaryInfoVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/vo/SysDictionaryDataVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/dictionary/vo/SysDictionaryVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/resources/mapper/dictionary/SysDictionaryDataMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/system/src/main/resources/mapper/dictionary/SysDictionaryMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/service/impl/SysUserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +268,7 @@
       <workItem from="1722481926227" duration="1229000" />
       <workItem from="1722565027697" duration="12344000" />
       <workItem from="1722591223037" duration="3914000" />
-      <workItem from="1722735548506" duration="2054000" />
+      <workItem from="1722735548506" duration="8658000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -531,7 +550,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722593908293</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="admin.system.user --done">
+      <option name="closed" value="true" />
+      <created>1722737605916</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1722737605916</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
