@@ -4,45 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.system.param --done">
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/client/nav/constant/NavClientConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/client/nav/dto/ClientNavCommentAddDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/client/nav/vo/ClientNavCommentTreeVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/client/nav/vo/NavCategoryClientVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/client/nav/vo/NavCategorySiteClientVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/client/nav/vo/NavClientListVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/client/search/vo/NavClientSiteSearchVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/bing/controller/BingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/bing/util/BingUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/bing/vo/BingImageVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/category/dto/NavCategoryAddDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/category/dto/NavCategoryListDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/category/dto/NavCategoryUpdateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/category/po/NavCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/category/vo/NavCategoryVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/site/constant/NavSiteClientConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/site/dto/NavSiteAddDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/site/dto/NavSiteListUserImportDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/site/dto/NavSitePageDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/site/dto/NavSiteUpdateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/site/dto/NavSiteUpdateSortDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/site/mapper/NavSiteMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/site/mapstruct/NavSiteConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/site/po/NavSite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/site/service/NavSiteService.java" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.nav.category">
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/category/mapper/NavCategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/category/mapstruct/NavCategoryConverter.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/site/service/impl/NavSiteServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/site/vo/NavSiteClientVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/site/vo/NavSiteLatestCollectVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/site/vo/NavSiteMatchVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/site/vo/NavSiteVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/resources/mapper/nav/site/NavSiteMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/resources/mapper/nav/category/NavCategoryMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/application/src/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/http/HttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/http/HttpUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +22,8 @@
         <option value="package-info" />
         <option value="AnnotationType" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -136,11 +103,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\EnterpriseProject\Java\navigation\liuuu-navigation\liuuu-navigation\admin\application\src\main\resources\mapper\nav\" />
       <recent name="D:\EnterpriseProject\Java\navigation\liuuu-navigation\liuuu-navigation\admin" />
       <recent name="D:\EnterpriseProject\Java\navigation\liuuu-navigation\liuuu-navigation\admin\application" />
       <recent name="D:\EnterpriseProject\Java\navigation\liuuu-navigation\liuuu-navigation\admin\system\src\main\resources\mapper" />
       <recent name="D:\EnterpriseProject\Java\navigation\liuuu-navigation\liuuu-navigation\common\swagger" />
-      <recent name="D:\EnterpriseProject\Java\navigation\liuuu-navigation\liuuu-navigation\common\log" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.StrUtilsTest">
@@ -291,7 +258,7 @@
       <workItem from="1722756748121" duration="60000" />
       <workItem from="1722756816490" duration="105000" />
       <workItem from="1722756929935" duration="3866000" />
-      <workItem from="1722832450840" duration="6332000" />
+      <workItem from="1722832450840" duration="7592000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -605,7 +572,31 @@
       <option name="project" value="LOCAL" />
       <updated>1722756132493</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="admin.nav.site">
+      <option name="closed" value="true" />
+      <created>1722847131371</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1722847131371</updated>
+    </task>
+    <task id="LOCAL-00041" summary="admin.nav.category">
+      <option name="closed" value="true" />
+      <created>1722847146408</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1722847146408</updated>
+    </task>
+    <task id="LOCAL-00042" summary="admin.nav.category">
+      <option name="closed" value="true" />
+      <created>1722847245804</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1722847245804</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -623,8 +614,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="redis config with limit script" />
-    <MESSAGE value="framework utils" />
     <MESSAGE value="thread pool configuration for framework" />
     <MESSAGE value="mybatis configurations and wrappers" />
     <MESSAGE value="mybatis wrappers" />
@@ -648,7 +637,9 @@
     <MESSAGE value="admin.system.dictionary --done" />
     <MESSAGE value="admin.system.param" />
     <MESSAGE value="admin.system.param --done" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin.system.param --done" />
+    <MESSAGE value="admin.nav.site" />
+    <MESSAGE value="admin.nav.category" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin.nav.category" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
