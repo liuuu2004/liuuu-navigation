@@ -43,7 +43,6 @@ public class HttpUtils {
     public static String sendGet(String url, String param, String contentType) {
         StringBuilder result = new StringBuilder();
         BufferedReader in = null;
-
         try {
             String urlNameString = url + "?" + param;
             URL realUrl = new URL(urlNameString);

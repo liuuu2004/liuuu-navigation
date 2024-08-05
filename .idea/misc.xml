@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/common/redis/pom.xml" />
         <option value="$PROJECT_DIR$/common/framework/pom.xml" />
         <option value="$PROJECT_DIR$/common/rate-limiter/pom.xml" />
+        <option value="$PROJECT_DIR$/admin/application/src/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

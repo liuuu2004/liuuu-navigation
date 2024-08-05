@@ -17,6 +17,7 @@
 
     <modules>
         <module>system</module>
+        <module>application</module>
     </modules>
 
 
