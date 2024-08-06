@@ -1,5 +1,6 @@
 package com.liuuu.admin.client.nav.vo;
 
+import com.liuuu.admin.nav.site.vo.NavSiteClientVO;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
@@ -30,7 +31,6 @@ public class NavCategorySiteClientVO implements Serializable {
     @ApiModelProperty("分类名称")
     private String categoryName;
 
-    // TODO
     @ApiModelProperty("网站")
     private List<NavSiteClientVO> sites;
 }
