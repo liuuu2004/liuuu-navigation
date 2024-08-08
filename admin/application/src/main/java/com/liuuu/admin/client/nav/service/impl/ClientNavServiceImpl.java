@@ -26,6 +26,7 @@ import org.springframework.util.CollectionUtils;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 /**
@@ -77,6 +78,7 @@ public class ClientNavServiceImpl implements ClientNavService {
             categories = new ArrayList<>();
             List<NavCategorySiteClientVO> siteList = new ArrayList<>();
         }
+        return categories;
     }
 
     /**
@@ -159,6 +161,7 @@ public class ClientNavServiceImpl implements ClientNavService {
         if (CollectionUtils.isEmpty(categoryIds)) {
             return;
         }
+        // 获取分类
         LambdaQueryWrapper<NavCategory> categoryWrapper = new LambdaQueryWrapper<>();
         categoryWrapper.in(NavCategory::getId, categoryIds);
         categoryWrapper.eq(NavCategory::getStatus, CommonStatus.NORMAL.code);
@@ -170,6 +173,85 @@ public class ClientNavServiceImpl implements ClientNavService {
         categoryList.addAll(childrenList);
         categoryIds = childrenList.stream().filter(category ->
                 category.getParentId() != null && category.getParentId() > 0).map(NavCategory::getParentId).collect(Collectors.toSet());
+        // 递归获取父分类
         getCategoryParent(categoryIds, categoryList);
     }
+
+    /**
+     * 构建分类和网站数据
+     * @return
+     */
+    private NavClientListVO buildCategoryAndSiteList() {
+        // 获取分类列表并构建树形结构
+        LambdaQueryWrapper<NavCategory> categoryWrapper = new LambdaQueryWrapper<>();
+        categoryWrapper.eq(NavCategory::getStatus, CommonStatus.NORMAL.code);
+        categoryWrapper.orderByAsc(NavCategory::getSort);
+
+        // 构建树形结构
+        List<NavCategoryClientVO> categories = NavClientCategoryUtils.buildTree(
+                ClientNavConverter.INSTANCE.converterCategory(navCategoryMapper.selectList(categoryWrapper)),
+                0L);
+
+        // 后去最后一级分类
+        List<NavCategoryClientVO> lastLevelCategoryList = new ArrayList<>();
+        NavClientCategoryUtils.buildLastLevelCategoryList(categories, lastLevelCategoryList);
+
+        // 最后一级为空则更新缓存为空
+        if (CollectionUtils.isEmpty(lastLevelCategoryList)) {
+            setCategoryCache(new ArrayList<>());
+            setSiteCache(new ArrayList<>());
+            return NavClientListVO.builder().categories(new ArrayList<>()).sites(new ArrayList<>()).build();
+        }
+
+        // 获取最后一级分类所有id
+        Set<Long> categoryIds = lastLevelCategoryList.parallelStream().map(c -> c.getId()).collect(Collectors.toSet());
+
+        // 获取网站数据
+        LambdaQueryWrapper<NavSite> siteWrapper = new LambdaQueryWrapper<>();
+        siteWrapper.in(NavSite::getCategoryId, categories);
+        siteWrapper.eq(NavSite::getStatus, CommonStatus.NORMAL.code);
+        siteWrapper.orderByAsc(NavSite::getCategoryId, NavSite::getSort);
+        siteWrapper.select(NavSite::getId, NavSite::getCategoryId, NavSite::getSiteName, NavSite::getSitePath,
+                NavSite::getSiteDescription, NavSite::getSiteUrl);
+        List<NavSiteClientVO> siteList = NavSiteConverter.INSTANCE.convertClient(navSiteMapper.selectList(siteWrapper));
+
+        // 构建分类下的网站
+        List<NavCategorySiteClientVO> categorySiteList = NavCategoryConverter.INSTANCE.convertSiteClient(lastLevelCategoryList);
+        categorySiteList.parallelStream().forEach(category -> {
+            List<NavSiteClientVO> siteClientList = siteList.stream().filter(
+                    site -> category.getId().equals(site.getCategoryId())
+            ).collect(Collectors.toList());
+        });
+
+        // 过滤没有网站的分类网站
+        categorySiteList = categorySiteList.stream().filter(item ->
+                !CollectionUtils.isEmpty(item.getSites())).collect(Collectors.toList());
+
+        // 过滤没有网站的分类
+        NavClientUtils.filterCategoryNotSite(categories, categorySiteList);
+
+        // 存入缓存
+        setCategoryCache(categories);
+        setSiteCache(categorySiteList);
+
+        NavClientListVO clientListVO = NavClientListVO.builder().categories(categories).sites(categorySiteList).build();
+        return clientListVO;
+    }
+
+    /**
+     * 设置分类缓存
+     * @param list
+     */
+    private void setCategoryCache(List<NavCategoryClientVO> list) {
+        redisService.set(NavClientConstant.CATEGORY_CACHE_PREFIX, list, 7, TimeUnit.DAYS);
+    }
+
+    /**
+     * 设置网站缓存
+     * @param list
+     */
+    private void setSiteCache(List<NavCategorySiteClientVO> list) {
+        redisService.set(NavClientConstant.SITE_CACHE_PREFIX, list, 7, TimeUnit.DAYS);
+    }
+
 }
