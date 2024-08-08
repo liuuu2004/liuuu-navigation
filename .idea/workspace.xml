@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.client.nav">
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.nav.category --done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/client/nav/service/impl/ClientNavServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/client/nav/service/impl/ClientNavServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/category/service/impl/NavCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/category/service/impl/NavCategoryServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +19,8 @@
         <option value="package-info" />
         <option value="AnnotationType" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -257,7 +257,7 @@
       <workItem from="1722756929935" duration="3866000" />
       <workItem from="1722832450840" duration="8204000" />
       <workItem from="1722908451229" duration="6782000" />
-      <workItem from="1723085889253" duration="1632000" />
+      <workItem from="1723085889253" duration="4194000" />
     </task>
     <task id="LOCAL-00001" summary="start-up">
       <option name="closed" value="true" />
@@ -627,7 +627,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722917707344</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="admin.client.nav">
+      <option name="closed" value="true" />
+      <created>1723087525766</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1723087525766</updated>
+    </task>
+    <task id="LOCAL-00048" summary="admin.nav.category --done">
+      <option name="closed" value="true" />
+      <created>1723088877072</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1723088877072</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -645,7 +661,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mybatis configurations and wrappers" />
     <MESSAGE value="mybatis wrappers" />
     <MESSAGE value="mybatis wrappers query" />
     <MESSAGE value="mybatis page utils" />
@@ -670,7 +685,8 @@
     <MESSAGE value="admin.nav.site" />
     <MESSAGE value="admin.nav.category" />
     <MESSAGE value="admin.client.nav" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin.client.nav" />
+    <MESSAGE value="admin.nav.category --done" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin.nav.category --done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
