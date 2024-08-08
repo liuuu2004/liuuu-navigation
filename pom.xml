@@ -119,6 +119,10 @@
             <groupId>com.liuuu</groupId>
             <artifactId>security</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.liuuu</groupId>
+            <artifactId>rate-limiter</artifactId>
+        </dependency>
         <!--        <dependency>-->
 <!--            <groupId>com.liuuu</groupId>-->
 <!--            <artifactId>security</artifactId>-->

@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.nav.category --done">
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/category/service/impl/NavCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/category/service/impl/NavCategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/LiuuuNavigationAdminApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,15 +259,7 @@
       <workItem from="1722756929935" duration="3866000" />
       <workItem from="1722832450840" duration="8204000" />
       <workItem from="1722908451229" duration="6782000" />
-      <workItem from="1723085889253" duration="4194000" />
-    </task>
-    <task id="LOCAL-00001" summary="start-up">
-      <option name="closed" value="true" />
-      <created>1721122506698</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1721122506698</updated>
+      <workItem from="1723085889253" duration="6724000" />
     </task>
     <task id="LOCAL-00002" summary="start-up">
       <option name="closed" value="true" />
@@ -643,7 +637,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723088877072</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="admin.nav.category --done">
+      <option name="closed" value="true" />
+      <created>1723101408192</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1723101408192</updated>
+    </task>
+    <task id="LOCAL-00050" summary="admin.nav.category --done">
+      <option name="closed" value="true" />
+      <created>1723102972488</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1723102972488</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
