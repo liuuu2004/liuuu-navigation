@@ -86,6 +86,12 @@
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.googlecode.owasp-java-html-sanitizer</groupId>
+            <artifactId>owasp-java-html-sanitizer</artifactId>
+            <version>20211018.2</version>
+            <scope>compile</scope>
+        </dependency>
 <!--        <dependency>-->
 <!--            <groupId>com.liuuu</groupId>-->
 <!--            <artifactId>security</artifactId>-->

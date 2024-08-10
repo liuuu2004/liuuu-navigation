@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.nav.category --done">
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/exception/GlobalExceptionHandler.java" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.core.exception  --done">
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/config/InsertUpdateMyBatisInterceptorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/config/MyBatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/config/XssFilterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/filter/XssFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/filter/XssHttpServletRequestWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/core/src/test/java/com/liuuu/common/core/util/html/HTMLFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/LiuuuNavigationAdminApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/html/EscapeUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/html/HTMLFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/html/HTMLFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +65,8 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;JUnit.HTMLFilterTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HTMLFilterTest.testSanitizeBaseXSS.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.IPUtilsTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.IdUtilsTest.testSimpleUUID.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.IdWorkerTest.executor&quot;: &quot;Run&quot;,
@@ -65,7 +76,7 @@
     &quot;JUnit.IdWorkerTest.testPerformance.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.LogOperationMapperTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.LogOperationMapperTest.testLogOperationMapper.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.StrUtilsTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StrUtilsTest.executor&quot;: &quot;Run with Parallel Runner&quot;,
     &quot;JUnit.StrUtilsTest.testFormat (1).executor&quot;: &quot;Run&quot;,
     &quot;JUnit.StrUtilsTest.testFormat.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.StrUtilsTest.testIsHttp.executor&quot;: &quot;Run&quot;,
@@ -73,7 +84,10 @@
     &quot;JUnit.StrUtilsTest.testMatches.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.ThreadsTest.testShutdownAndAwaitTermination.executor&quot;: &quot;Run&quot;,
     &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.admin [clean,install,--projects...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.core [clean,install,--non-recursive].executor&quot;: &quot;Run&quot;,
     &quot;Maven.core [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.core [test].executor&quot;: &quot;Run&quot;,
     &quot;Maven.liuuu-navigation [clean,install...].executor&quot;: &quot;Run&quot;,
     &quot;Maven.liuuu-navigation [install].executor&quot;: &quot;Run&quot;,
     &quot;Maven.system [install].executor&quot;: &quot;Run&quot;,
@@ -89,9 +103,9 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -100,6 +114,9 @@
     ]
   }
 }</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\EnterpriseProject\Java\navigation\liuuu-navigation\liuuu-navigation\admin\application\src\main\resources\mapper\nav\" />
@@ -110,63 +127,32 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.StrUtilsTest">
-    <configuration name="IdWorkerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HTMLFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.liuuu.common.core.util.id.*" />
+          <option name="PATTERN" value="com.liuuu.common.core.util.html.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.liuuu.common.core.util.id" />
-      <option name="MAIN_CLASS_NAME" value="com.liuuu.common.core.util.id.IdWorkerTest" />
+      <option name="PACKAGE_NAME" value="com.liuuu.common.core.util.html" />
+      <option name="MAIN_CLASS_NAME" value="com.liuuu.common.core.util.html.HTMLFilterTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IdWorkerTest.testPerformance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HTMLFilterTest.testSanitizeBaseXSS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.liuuu.common.core.util.id.*" />
+          <option name="PATTERN" value="com.liuuu.common.core.util.html.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.liuuu.common.core.util.id" />
-      <option name="MAIN_CLASS_NAME" value="com.liuuu.common.core.util.id.IdWorkerTest" />
-      <option name="METHOD_NAME" value="testPerformance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogOperationMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="system" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.liuuu.admin.system.log.operation.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.liuuu.admin.system.log.operation.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.liuuu.admin.system.log.operation.mapper.LogOperationMapperTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogOperationMapperTest.testLogOperationMapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="system" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.liuuu.admin.system.log.operation.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.liuuu.admin.system.log.operation.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.liuuu.admin.system.log.operation.mapper.LogOperationMapperTest" />
-      <option name="METHOD_NAME" value="testLogOperationMapper" />
+      <option name="PACKAGE_NAME" value="com.liuuu.common.core.util.html" />
+      <option name="MAIN_CLASS_NAME" value="com.liuuu.common.core.util.html.HTMLFilterTest" />
+      <option name="METHOD_NAME" value="testSanitizeBaseXSS" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,23 +173,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StrUtilsTest.testFormat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liuuu.common.core.util.string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liuuu.common.core.util.string" />
+      <option name="MAIN_CLASS_NAME" value="com.liuuu.common.core.util.string.StrUtilsTest" />
+      <option name="METHOD_NAME" value="testFormat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="core [test]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="test" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/common/core" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.StrUtilsTest" />
-        <item itemvalue="JUnit.LogOperationMapperTest" />
-        <item itemvalue="JUnit.LogOperationMapperTest.testLogOperationMapper" />
-        <item itemvalue="JUnit.IdWorkerTest" />
-        <item itemvalue="JUnit.IdWorkerTest.testPerformance" />
+        <item itemvalue="Maven.core [test]" />
+        <item itemvalue="JUnit.StrUtilsTest.testFormat" />
+        <item itemvalue="JUnit.HTMLFilterTest" />
+        <item itemvalue="JUnit.HTMLFilterTest.testSanitizeBaseXSS" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-11.0.21-corretto-11.0.21-f644763e9732-97de7592" />
-        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -259,15 +283,21 @@
       <workItem from="1722756929935" duration="3866000" />
       <workItem from="1722832450840" duration="8204000" />
       <workItem from="1722908451229" duration="6782000" />
-      <workItem from="1723085889253" duration="6724000" />
-    </task>
-    <task id="LOCAL-00002" summary="start-up">
-      <option name="closed" value="true" />
-      <created>1721123310087</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1721123310087</updated>
+      <workItem from="1723085889253" duration="10665000" />
+      <workItem from="1723110920075" duration="806000" />
+      <workItem from="1723111759439" duration="826000" />
+      <workItem from="1723119854771" duration="114000" />
+      <workItem from="1723169697474" duration="3000" />
+      <workItem from="1723177429732" duration="978000" />
+      <workItem from="1723178417905" duration="601000" />
+      <workItem from="1723179027132" duration="580000" />
+      <workItem from="1723179616925" duration="87000" />
+      <workItem from="1723179712305" duration="2182000" />
+      <workItem from="1723181907120" duration="96000" />
+      <workItem from="1723182012419" duration="212000" />
+      <workItem from="1723192152767" duration="664000" />
+      <workItem from="1723197484762" duration="619000" />
+      <workItem from="1723252772990" duration="5150000" />
     </task>
     <task id="LOCAL-00003" summary="Enums and constants">
       <option name="closed" value="true" />
@@ -653,7 +683,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723102972488</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="admin.core.exception  --done">
+      <option name="closed" value="true" />
+      <created>1723104273232</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1723104273233</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,7 +709,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mybatis wrappers" />
     <MESSAGE value="mybatis wrappers query" />
     <MESSAGE value="mybatis page utils" />
     <MESSAGE value="Security" />
@@ -696,7 +733,8 @@
     <MESSAGE value="admin.nav.category" />
     <MESSAGE value="admin.client.nav" />
     <MESSAGE value="admin.nav.category --done" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin.nav.category --done" />
+    <MESSAGE value="admin.core.exception  --done" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin.core.exception  --done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -90,12 +90,20 @@
             <version>3.11.2</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>com.liuuu</groupId>
             <artifactId>common</artifactId>
             <version>1.0.0</version>
             <scope>test</scope>
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>com.googlecode.owasp-java-html-sanitizer</groupId>-->
+<!--            <artifactId>owasp-java-html-sanitizer</artifactId>-->
+<!--            <version>20211018.2</version>-->
+<!--        </dependency>-->
+
     </dependencies>
 
 </project>
