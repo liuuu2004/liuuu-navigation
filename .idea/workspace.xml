@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="common.core.util.XSSFilter">
-      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/html/EscapeUtil.java" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.core.config  --done">
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/captcha/constant/CaptchaConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/captcha/controller/CaptchaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/captcha/vo/CaptchaImageVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/security/auth/dto/AuthLoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/security/auth/filter/TokenAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/security/auth/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/security/auth/vo/AuthLoginVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +26,8 @@
         <option value="package-info" />
         <option value="AnnotationType" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -285,23 +293,7 @@
       <workItem from="1723182012419" duration="212000" />
       <workItem from="1723192152767" duration="664000" />
       <workItem from="1723197484762" duration="619000" />
-      <workItem from="1723252772990" duration="6060000" />
-    </task>
-    <task id="LOCAL-00004" summary="HttpUtils">
-      <option name="closed" value="true" />
-      <created>1721198241463</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1721198241463</updated>
-    </task>
-    <task id="LOCAL-00005" summary="stringUtils">
-      <option name="closed" value="true" />
-      <created>1721199941406</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1721199941406</updated>
+      <workItem from="1723252772990" duration="10967000" />
     </task>
     <task id="LOCAL-00006" summary="stringUtils">
       <option name="closed" value="true" />
@@ -679,7 +671,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723260308006</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="common.core.util.html  --done">
+      <option name="closed" value="true" />
+      <created>1723261339874</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1723261339874</updated>
+    </task>
+    <task id="LOCAL-00054" summary="admin.core.config  --done">
+      <option name="closed" value="true" />
+      <created>1723262035258</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1723262035258</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -697,8 +705,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mybatis page utils" />
-    <MESSAGE value="Security" />
     <MESSAGE value="rate limiter" />
     <MESSAGE value="admin.system.log.login&amp;operation" />
     <MESSAGE value="admin.system.user" />
@@ -722,7 +728,9 @@
     <MESSAGE value="admin.nav.category --done" />
     <MESSAGE value="admin.core.exception  --done" />
     <MESSAGE value="common.core.util.XSSFilter" />
-    <option name="LAST_COMMIT_MESSAGE" value="common.core.util.XSSFilter" />
+    <MESSAGE value="common.core.util.html  --done" />
+    <MESSAGE value="admin.core.config  --done" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin.core.config  --done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
