@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.core.exception  --done">
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/config/InsertUpdateMyBatisInterceptorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/config/MyBatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/config/XssFilterConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/filter/XssFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/filter/XssHttpServletRequestWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/core/src/test/java/com/liuuu/common/core/util/html/HTMLFilterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/html/EscapeUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/html/HTMLFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/html/HTMLFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="common.core.util.XSSFilter">
+      <change afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/html/EscapeUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,15 +285,7 @@
       <workItem from="1723182012419" duration="212000" />
       <workItem from="1723192152767" duration="664000" />
       <workItem from="1723197484762" duration="619000" />
-      <workItem from="1723252772990" duration="5150000" />
-    </task>
-    <task id="LOCAL-00003" summary="Enums and constants">
-      <option name="closed" value="true" />
-      <created>1721189289088</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1721189289088</updated>
+      <workItem from="1723252772990" duration="6060000" />
     </task>
     <task id="LOCAL-00004" summary="HttpUtils">
       <option name="closed" value="true" />
@@ -691,7 +671,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723104273233</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="common.core.util.XSSFilter">
+      <option name="closed" value="true" />
+      <created>1723260308006</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1723260308006</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -709,7 +697,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mybatis wrappers query" />
     <MESSAGE value="mybatis page utils" />
     <MESSAGE value="Security" />
     <MESSAGE value="rate limiter" />
@@ -734,7 +721,8 @@
     <MESSAGE value="admin.client.nav" />
     <MESSAGE value="admin.nav.category --done" />
     <MESSAGE value="admin.core.exception  --done" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin.core.exception  --done" />
+    <MESSAGE value="common.core.util.XSSFilter" />
+    <option name="LAST_COMMIT_MESSAGE" value="common.core.util.XSSFilter" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
