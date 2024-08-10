@@ -1,5 +1,7 @@
 package com.liuuu.admin.core.config;
 
+import com.liuuu.common.core.filter.XssFilter;
+import com.liuuu.common.core.util.string.StrUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
