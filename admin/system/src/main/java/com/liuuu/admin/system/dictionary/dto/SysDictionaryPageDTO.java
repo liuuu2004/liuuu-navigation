@@ -1,5 +1,6 @@
 package com.liuuu.admin.system.dictionary.dto;
 
+import com.liuuu.common.framework.mybatis.page.dto.PageDTO;
 import com.liuuu.common.framework.mybatis.page.vo.PageVO;
 import com.liuuu.common.framework.mybatis.plugin.annotation.Query;
 import com.liuuu.common.framework.mybatis.plugin.enums.QueryWay;
@@ -17,7 +18,7 @@ import java.io.Serializable;
  */
 @Data
 @ApiModel("字典分页")
-public class SysDictionaryPageDTO extends PageVO implements Serializable {
+public class SysDictionaryPageDTO extends PageDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty("字典名称")
