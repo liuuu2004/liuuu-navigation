@@ -29,7 +29,7 @@ public class Threads {
      * 停止线程池
      * 首先shutdown,停止接收新任务并尝试完成所有已存在任务
      * 如果超时则调用shotdownnow,取消在workqueue中pending的任务并终端所有阻塞函数
-     * 如果任然超市则强制退出
+     * 如果仍然超时则强制退出
      * @param pool
      */
     public static void shutdownAndAwaitTermination(ExecutorService pool) {

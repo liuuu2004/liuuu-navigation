@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.core.config  --done">
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/captcha/constant/CaptchaConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/captcha/controller/CaptchaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/captcha/vo/CaptchaImageVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/security/auth/dto/AuthLoginDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/security/auth/filter/TokenAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/security/auth/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/security/auth/vo/AuthLoginVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/security/config/SecurityConfig.java" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.core.security">
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/security/auth/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/security/auth/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/core/security/auth/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/thread/Threads.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/util/thread/Threads.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +22,8 @@
         <option value="package-info" />
         <option value="AnnotationType" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -293,15 +289,8 @@
       <workItem from="1723182012419" duration="212000" />
       <workItem from="1723192152767" duration="664000" />
       <workItem from="1723197484762" duration="619000" />
-      <workItem from="1723252772990" duration="10967000" />
-    </task>
-    <task id="LOCAL-00006" summary="stringUtils">
-      <option name="closed" value="true" />
-      <created>1721200992234</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1721200992234</updated>
+      <workItem from="1723252772990" duration="10986000" />
+      <workItem from="1723341362532" duration="1717000" />
     </task>
     <task id="LOCAL-00007" summary="NetUtils(ip)">
       <option name="closed" value="true" />
@@ -687,7 +676,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723262035258</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="admin.core.security">
+      <option name="closed" value="true" />
+      <created>1723268223027</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1723268223027</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -705,7 +702,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="rate limiter" />
     <MESSAGE value="admin.system.log.login&amp;operation" />
     <MESSAGE value="admin.system.user" />
     <MESSAGE value="admin.system.user.service" />
@@ -730,7 +726,8 @@
     <MESSAGE value="common.core.util.XSSFilter" />
     <MESSAGE value="common.core.util.html  --done" />
     <MESSAGE value="admin.core.config  --done" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin.core.config  --done" />
+    <MESSAGE value="admin.core.security" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin.core.security" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
