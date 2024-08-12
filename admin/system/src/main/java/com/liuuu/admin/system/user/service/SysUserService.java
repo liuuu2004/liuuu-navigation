@@ -37,7 +37,7 @@ public interface SysUserService extends BaseService<SysUser> {
      * @param userIds
      * @return
      */
-    List<SysUserVO> getUsernameAndNickNameByUserIds(List<String> userIds);
+    List<SysUserVO> getUsernameAndNickNameByUserIds(List<Long> userIds);
 
     /**
      * 分页列表

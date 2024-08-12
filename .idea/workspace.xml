@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/picture/constant/NavPictureConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/picture/controller/NavPictureController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/picture/mapper/NavPictureMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/picture/mapstruct/NavPictureConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/picture/service/NavPictureService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/picture/service/impl/NavPictureServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/picture/vo/NavPictureUploadVO.java" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.nav.picture  --done">
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/comment/constant/NavCommentConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/comment/controller/NavCommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/comment/dto/NavCommentPageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/comment/dto/NavCommentRejectDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/comment/enums/NavCommentStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/comment/mapper/NavCommentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/comment/mapstruct/NavCommentConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/comment/po/NavComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/comment/service/NavCommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/comment/service/impl/NavCommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/comment/vo/NavCommentVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/service/SysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/system/src/main/java/com/liuuu/admin/system/user/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/web/vo/BaseVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/core/src/main/java/com/liuuu/common/core/web/vo/BaseVO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package-info" />
         <option value="AnnotationType" />
         <option value="Enum" />
+        <option value="package-info" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -294,15 +301,7 @@
       <workItem from="1723197484762" duration="619000" />
       <workItem from="1723252772990" duration="10986000" />
       <workItem from="1723341362532" duration="12942000" />
-      <workItem from="1723427588808" duration="1480000" />
-    </task>
-    <task id="LOCAL-00010" summary="swagger finished">
-      <option name="closed" value="true" />
-      <created>1721378248967</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1721378248967</updated>
+      <workItem from="1723427588808" duration="7858000" />
     </task>
     <task id="LOCAL-00011" summary="redis config">
       <option name="closed" value="true" />
@@ -688,7 +687,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723359026402</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="admin.nav.picture  --done">
+      <option name="closed" value="true" />
+      <created>1723429341584</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1723429341584</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -706,7 +713,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add" />
     <MESSAGE value="admin.system.menu" />
     <MESSAGE value="admin.system.api" />
     <MESSAGE value="admin.system.api --done" />
@@ -731,7 +737,8 @@
     <MESSAGE value="admin.core.security  --done" />
     <MESSAGE value="admin.system.dictionary  --done" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="admin.nav.picture  --done" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin.nav.picture  --done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

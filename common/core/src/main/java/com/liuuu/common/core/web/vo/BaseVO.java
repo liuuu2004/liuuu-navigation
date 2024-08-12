@@ -21,7 +21,7 @@ public class BaseVO {
     private Date gmtCreate;
 
     @ApiModelProperty("创建人用户id")
-    private long createUserId;
+    private Long createUserId;
 
     @ApiModelProperty("修改时间")
     private Date gmtModify;

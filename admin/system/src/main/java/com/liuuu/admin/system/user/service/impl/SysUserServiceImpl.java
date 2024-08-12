@@ -136,7 +136,7 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserMapper, SysUser> 
      * @return
      */
     @Override
-    public List<SysUserVO> getUsernameAndNickNameByUserIds(List<String> userIds) {
+    public List<SysUserVO> getUsernameAndNickNameByUserIds(List<Long> userIds) {
         if (CollectionUtils.isEmpty(userIds)) {
             return new ArrayList<>();
         }
