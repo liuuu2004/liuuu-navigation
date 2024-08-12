@@ -9,6 +9,6 @@ import com.liuuu.common.framework.web.mapper.BaseMapperPlus;
  * @Author Liuuu
  * @Date 2024/8/12
  */
-public class NavCommentMapper extends BaseMapperPlus<NavComment> {
+public interface NavCommentMapper extends BaseMapperPlus<NavComment> {
 
 }
