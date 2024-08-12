@@ -4,23 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment="admin.system.dictionary  --done">
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/config/controller/NavSiteConfigController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/config/dto/NavSiteConfigUpdateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/config/mapper/NavSiteConfigMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/config/mapstruct/NavSiteConfigConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/config/po/NavSiteConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/config/service/NavSiteConfigService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/config/service/impl/NavSiteConfigServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/config/vo/NavSiteConfigAboutVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/config/vo/NavSiteConfigVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/index/controller/NavIndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/index/service/NavIndexService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/index/service/impl/NavIndexServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/index/vo/NavIndexStatisticsVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/picture/po/NavPicture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/site/controller/NavSiteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/application/src/main/resources/mapper/nav/config/NavSiteConfigMapper.xml" afterDir="false" />
+    <list default="true" id="7f4524e9-b590-49a3-b7c6-57fe31db9a1c" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/picture/constant/NavPictureConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/picture/controller/NavPictureController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/picture/mapper/NavPictureMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/picture/mapstruct/NavPictureConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/picture/service/NavPictureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/picture/service/impl/NavPictureServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/src/main/java/com/liuuu/admin/nav/picture/vo/NavPictureUploadVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -302,15 +293,8 @@
       <workItem from="1723192152767" duration="664000" />
       <workItem from="1723197484762" duration="619000" />
       <workItem from="1723252772990" duration="10986000" />
-      <workItem from="1723341362532" duration="12934000" />
-    </task>
-    <task id="LOCAL-00009" summary="some web utils, vo and response result">
-      <option name="closed" value="true" />
-      <created>1721357636214</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1721357636214</updated>
+      <workItem from="1723341362532" duration="12942000" />
+      <workItem from="1723427588808" duration="1480000" />
     </task>
     <task id="LOCAL-00010" summary="swagger finished">
       <option name="closed" value="true" />
@@ -696,7 +680,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723348059128</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary=".">
+      <option name="closed" value="true" />
+      <created>1723359026402</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1723359026402</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -714,7 +706,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="admin.system.user.service" />
     <MESSAGE value="add" />
     <MESSAGE value="admin.system.menu" />
     <MESSAGE value="admin.system.api" />
@@ -739,7 +730,8 @@
     <MESSAGE value="admin.core.security" />
     <MESSAGE value="admin.core.security  --done" />
     <MESSAGE value="admin.system.dictionary  --done" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin.system.dictionary  --done" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
